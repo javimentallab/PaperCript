@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <string name="tab_encrypt">Cifrar</string>
+    <string name="tab_decrypt">Decifrar</string>
+    <string name="tab_sheet">Folha</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="copy">Copiar</string>
+    <string name="show">Mostrar</string>
+    <string name="hide">Ocultar</string>
+    <string name="grant_camera">Permitir acesso à câmara</string>
+    <string name="deriving_key">A derivar a chave…</string>
+    <string name="no_label">(sem etiqueta)</string>
+
+    <string name="encrypt_title">Cifrar</string>
+    <string name="encrypt_intro">Gera o código que vai no cartão. A etiqueta é apenas uma
+        nota para distinguires os teus cartões.</string>
+    <string name="label_field">Etiqueta (ex. Gmail do trabalho)</string>
+    <string name="label_field_help">Serve só para reconheceres o cartão. Não afeta a cifra e
+        podes alterá-la mais tarde.</string>
+    <string name="password_field">Palavra-passe a guardar</string>
+    <string name="scan_password_button">Ler a palavra-passe com a câmara</string>
+    <string name="generate">Gerar</string>
+    <string name="generator_length">Comprimento: %1$d</string>
+    <string name="generator_symbols">Símbolos</string>
+    <string name="generator_entropy">≈ %1$d bits de entropia</string>
+    <string name="master_field">Palavra-passe mestra</string>
+    <string name="master_help">Nunca é guardada em lado nenhum. Se a esqueceres, não há
+        recuperação possível.</string>
+    <string name="encrypt_button">Cifrar</string>
+    <string name="encrypted_code">✓ Cifrada — pronta para a folha</string>
+    <string name="error_encrypt_failed">Não foi possível cifrar: %1$s</string>
+    <string name="code_footer">%1$d caracteres. Não existe I, L, O nem U: se te parecer ver
+        um, é 1, 1, 0 ou V.</string>
+    <string name="add_to_sheet">Adicionar à folha e seguinte</string>
+    <string name="handwrite_note">Também o podes copiar à mão. Se o fizeres, verifica o que
+        escreveste decifrando-o antes de deitar fora o original.</string>
+    <string name="capture_hint_password">Enquadra a palavra-passe no retângulo. Funciona com
+        texto impresso; com letra manuscrita não contes com isso.</string>
+    <string name="nothing_read">Não foi lido nada. Tenta com mais luz.</string>
+    <string name="pick_password_title">Qual é a palavra-passe?</string>
+    <string name="pick_password_help">Toca na linha correta. Confirma-a: o OCR confunde
+        caracteres parecidos.</string>
+
+    <string name="decrypt_title">Decifrar</string>
+    <string name="scan_qr_button">Ler o QR do cartão</string>
+    <string name="read_from_qr">Lido do QR. Falta apenas a palavra-passe mestra.</string>
+    <string name="card_named">Cartão: %1$s</string>
+    <string name="looks_incomplete">Parece incompleto: faltam caracteres.</string>
+    <string name="decrypt_button">Decifrar</string>
+    <string name="password_result">Palavra-passe</string>
+    <string name="clipboard_cleared">É apagada %1$d s depois de copiada, ou quando voltares à
+        aplicação — o Android não deixa nenhuma aplicação mexer na área de transferência em
+        segundo plano.</string>
+    <string name="clipboard_clear_now">Apagar já</string>
+
+    <string name="error_bad_key">Não bate certo. Ou a palavra-passe mestra está errada, ou um
+        carácter foi mal lido. Compara as casas com o papel.</string>
+    <string name="error_empty_master">A palavra-passe mestra está vazia.</string>
+    <string name="error_invalid_character">Carácter inválido: %1$s</string>
+    <string name="error_too_short">O código é demasiado curto.</string>
+    <string name="error_unsupported_version">Este cartão usa um formato que esta versão da
+        aplicação já não lê (%1$s).</string>
+
+    <string name="entry_status">%1$d caracteres · posição %2$d</string>
+    <string name="backspace">Apagar</string>
+    <string name="clear">Limpar</string>
+
+    <string name="torch">Lanterna</string>
+    <string name="take_photo">Tirar foto</string>
+    <string name="camera_open_failed">Não foi possível abrir a câmara: %1$s</string>
+    <string name="photo_failed">Não foi possível tirar a foto: %1$s</string>
+    <string name="photo_unreadable">Não foi possível ler a foto</string>
+    <string name="qr_aim">Aponta ao QR do cartão.</string>
+    <string name="qr_not_ours">Esse QR não é desta aplicação.</string>
+    <string name="qr_found">Cartão encontrado: %1$s</string>
+    <string name="qr_use">Usar este cartão</string>
+
+    <string name="sheet_title">Folha para imprimir</string>
+    <string name="sheet_empty">Ainda não há cartões. Vai a Cifrar, cifra uma palavra-passe e
+        toca em \"Adicionar à folha e seguinte\". Cabem %1$d por folha, em 4
+        colunas.</string>
+    <string name="sheet_memory_warning">Esta lista só existe enquanto a aplicação estiver
+        aberta. Imprime antes de a fechares.</string>
+    <string name="print_button">Imprimir ou guardar em PDF</string>
+    <string name="clear_sheet">Limpar a folha</string>
+    <string name="confirm_clear_title">Limpar a folha?</string>
+    <string name="confirm_clear_text">Os %1$d cartões serão descartados. Não há cópia em lado
+        nenhum: se não os imprimiste, perde-los.</string>
+    <string name="remove">Remover</string>
+    <string name="sheet_page">Folha %1$d</string>
+    <string name="layout_title">Cartões por folha</string>
+    <string name="layout_columns">Colunas: %1$d</string>
+    <string name="layout_rows">Linhas: %1$d</string>
+    <string name="layout_summary">%1$d por folha · cartão %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">O QR desce para %1$s mm e pode ser difícil de ler. Abaixo
+        de cerca de %2$s mm a fiabilidade cai — usa menos cartões por folha.</string>
+
+    <plurals name="card_count">
+        <item quantity="one">%1$d cartão</item>
+        <item quantity="other">%1$d cartões</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="one">%1$d folha A4</item>
+        <item quantity="other">%1$d folhas A4</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="one">%1$d cartão na folha, por imprimir.</item>
+        <item quantity="other">%1$d cartões na folha, por imprimir.</item>
+    </plurals>
+
+    <string name="print_header_title">PaperCript — códigos cifrados</string>
+    <string name="print_header_warning">Sem a palavra-passe mestra estes cartões não valem
+        nada. Não a escrevas aqui.</string>
+</resources>

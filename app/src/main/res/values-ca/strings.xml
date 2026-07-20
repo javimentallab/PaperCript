@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <string name="tab_encrypt">Xifrar</string>
+    <string name="tab_decrypt">Desxifrar</string>
+    <string name="tab_sheet">Full</string>
+
+    <string name="cancel">Cancel·la</string>
+    <string name="copy">Copia</string>
+    <string name="show">Mostra</string>
+    <string name="hide">Amaga</string>
+    <string name="grant_camera">Dona permís de càmera</string>
+    <string name="deriving_key">Derivant la clau…</string>
+    <string name="no_label">(sense etiqueta)</string>
+
+    <string name="encrypt_title">Xifrar</string>
+    <string name="encrypt_intro">Genera el codi que va a la targeta. L\'etiqueta només és una
+        nota perquè distingeixis les teves targetes.</string>
+    <string name="label_field">Etiqueta (p. ex. Gmail de la feina)</string>
+    <string name="label_field_help">Només serveix perquè reconeguis la targeta. No afecta el
+        xifratge i la pots canviar més endavant.</string>
+    <string name="password_field">Contrasenya a desar</string>
+    <string name="scan_password_button">Llegeix la contrasenya amb la càmera</string>
+    <string name="generate">Genera</string>
+    <string name="generator_length">Longitud: %1$d</string>
+    <string name="generator_symbols">Símbols</string>
+    <string name="generator_entropy">≈ %1$d bits d\'entropia</string>
+    <string name="master_field">Clau mestra</string>
+    <string name="master_help">No es desa enlloc. Si l\'oblides, no hi ha recuperació.</string>
+    <string name="encrypt_button">Xifra</string>
+    <string name="encrypted_code">✓ Xifrada — a punt per al full</string>
+    <string name="error_encrypt_failed">No s\'ha pogut xifrar: %1$s</string>
+    <string name="code_footer">%1$d caràcters. No hi ha I, L, O ni U: si et sembla veure\'n
+        una, és 1, 1, 0 o V.</string>
+    <string name="add_to_sheet">Afegeix al full i següent</string>
+    <string name="handwrite_note">També la pots copiar a mà. Si ho fas, comprova el que has
+        escrit desxifrant-ho abans de llençar l\'original.</string>
+    <string name="capture_hint_password">Enquadra la contrasenya dins el requadre. Funciona
+        amb text imprès; amb lletra manuscrita no hi comptis.</string>
+    <string name="nothing_read">No s\'ha llegit res. Prova-ho amb més llum.</string>
+    <string name="pick_password_title">Quina és la contrasenya?</string>
+    <string name="pick_password_help">Toca la línia correcta. Comprova-la: l\'OCR confon
+        caràcters semblants.</string>
+
+    <string name="decrypt_title">Desxifrar</string>
+    <string name="scan_qr_button">Escaneja el QR de la targeta</string>
+    <string name="read_from_qr">Llegit del QR. Només falta la clau mestra.</string>
+    <string name="card_named">Targeta: %1$s</string>
+    <string name="looks_incomplete">Sembla incomplet: falten caràcters.</string>
+    <string name="decrypt_button">Desxifra</string>
+    <string name="password_result">Contrasenya</string>
+    <string name="clipboard_cleared">S\'esborra %1$d s després de copiar-la, o en tornar a
+        l\'aplicació — Android no deixa que cap aplicació toqui el porta-retalls en segon
+        pla.</string>
+    <string name="clipboard_clear_now">Esborra-ho ara</string>
+
+    <string name="error_bad_key">No quadra. O la clau mestra no és aquesta, o hi ha algun
+        caràcter mal llegit. Repassa les caselles contra el paper.</string>
+    <string name="error_empty_master">La clau mestra és buida.</string>
+    <string name="error_invalid_character">Caràcter no vàlid: %1$s</string>
+    <string name="error_too_short">El codi és massa curt.</string>
+    <string name="error_unsupported_version">Aquesta targeta té un format que aquesta versió
+        de l\'aplicació ja no llegeix (%1$s).</string>
+
+    <string name="entry_status">%1$d caràcters · posició %2$d</string>
+    <string name="backspace">Esborra</string>
+    <string name="clear">Buida</string>
+
+    <string name="torch">Llanterna</string>
+    <string name="take_photo">Fes una foto</string>
+    <string name="camera_open_failed">No s\'ha pogut obrir la càmera: %1$s</string>
+    <string name="photo_failed">No s\'ha pogut fer la foto: %1$s</string>
+    <string name="photo_unreadable">No s\'ha pogut llegir la foto</string>
+    <string name="qr_aim">Apunta al QR de la targeta.</string>
+    <string name="qr_not_ours">Aquest QR no és d\'aquesta aplicació.</string>
+    <string name="qr_found">Targeta trobada: %1$s</string>
+    <string name="qr_use">Fes servir aquesta targeta</string>
+
+    <string name="sheet_title">Full per imprimir</string>
+    <string name="sheet_empty">Encara no hi ha targetes. Ves a Xifrar, xifra una contrasenya
+        i prem \"Afegeix al full i següent\". N\'hi caben %1$d per full, en 4
+        columnes.</string>
+    <string name="sheet_memory_warning">Aquesta llista només existeix mentre l\'aplicació
+        està oberta. Imprimeix abans de tancar-la.</string>
+    <string name="print_button">Imprimeix o desa en PDF</string>
+    <string name="clear_sheet">Buida el full</string>
+    <string name="confirm_clear_title">Vols buidar el full?</string>
+    <string name="confirm_clear_text">Es descarten les %1$d targetes. No hi ha còpia enlloc:
+        si no les has imprès, les perds.</string>
+    <string name="remove">Treu</string>
+    <string name="sheet_page">Full %1$d</string>
+    <string name="layout_title">Targetes per full</string>
+    <string name="layout_columns">Columnes: %1$d</string>
+    <string name="layout_rows">Files: %1$d</string>
+    <string name="layout_summary">%1$d per full · targeta %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">El QR es queda en %1$s mm i pot costar escanejar-lo. Per
+        sota d\'uns %2$s mm la fiabilitat cau — posa menys targetes per full.</string>
+
+    <plurals name="card_count">
+        <item quantity="one">%1$d targeta</item>
+        <item quantity="other">%1$d targetes</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="one">%1$d full A4</item>
+        <item quantity="other">%1$d fulls A4</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="one">%1$d targeta al full, pendent d\'imprimir.</item>
+        <item quantity="other">%1$d targetes al full, pendents d\'imprimir.</item>
+    </plurals>
+
+    <string name="print_header_title">PaperCript — codis xifrats</string>
+    <string name="print_header_warning">Sense la clau mestra aquestes targetes no valen res.
+        No l\'apuntis aquí.</string>
+</resources>

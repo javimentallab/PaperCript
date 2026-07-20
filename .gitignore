@@ -1,0 +1,19 @@
+*.iml
+.gradle/
+.kotlin/
+.idea/
+.DS_Store
+
+# build/ sin barra inicial: cubre tambien app/build, que /build no alcanzaba
+build/
+captures/
+.externalNativeBuild
+.cxx
+
+# Contiene la ruta local del SDK de Android, distinta en cada maquina
+local.properties
+
+*.apk
+*.aab
+*.keystore
+*.jks

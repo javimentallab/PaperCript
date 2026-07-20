@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <string name="tab_encrypt">Zifratu</string>
+    <string name="tab_decrypt">Deszifratu</string>
+    <string name="tab_sheet">Orria</string>
+
+    <string name="cancel">Utzi</string>
+    <string name="copy">Kopiatu</string>
+    <string name="show">Erakutsi</string>
+    <string name="hide">Ezkutatu</string>
+    <string name="grant_camera">Eman kameraren baimena</string>
+    <string name="deriving_key">Gakoa eratortzen…</string>
+    <string name="no_label">(etiketarik gabe)</string>
+
+    <string name="encrypt_title">Zifratu</string>
+    <string name="encrypt_intro">Txartelean joango den kodea sortzen du. Etiketa ohar bat
+        besterik ez da, zure txartelak bereizteko.</string>
+    <string name="label_field">Etiketa (adib. Laneko Gmail)</string>
+    <string name="label_field_help">Txartela ezagutzeko baino ez da. Ez du zifratzean
+        eraginik, eta gerora alda dezakezu.</string>
+    <string name="password_field">Gordeko den pasahitza</string>
+    <string name="scan_password_button">Irakurri pasahitza kamerarekin</string>
+    <string name="generate">Sortu</string>
+    <string name="generator_length">Luzera: %1$d</string>
+    <string name="generator_symbols">Ikurrak</string>
+    <string name="generator_entropy">≈ %1$d entropia-bit</string>
+    <string name="master_field">Pasahitz nagusia</string>
+    <string name="master_help">Ez da inon gordetzen. Ahaztuz gero, ez dago berreskuratzerik.</string>
+    <string name="encrypt_button">Zifratu</string>
+    <string name="encrypted_code">✓ Zifratuta — orrirako prest</string>
+    <string name="error_encrypt_failed">Ezin izan da zifratu: %1$s</string>
+    <string name="code_footer">%1$d karaktere. Ez dago I, L, O ez U: bat ikusten duzula
+        iruditzen bazaizu, 1, 1, 0 edo V da.</string>
+    <string name="add_to_sheet">Gehitu orrira eta hurrengoa</string>
+    <string name="handwrite_note">Eskuz ere kopia dezakezu. Hala eginez gero, egiaztatu
+        idatzitakoa deszifratuz jatorrizkoa bota aurretik.</string>
+    <string name="capture_hint_password">Enkoadratu pasahitza laukian. Testu inprimatuarekin
+        funtzionatzen du; eskuzko idazkerarekin ez fidatu.</string>
+    <string name="nothing_read">Ez da ezer irakurri. Saiatu argi gehiagorekin.</string>
+    <string name="pick_password_title">Zein da pasahitza?</string>
+    <string name="pick_password_help">Ukitu lerro egokia. Egiaztatu ezazu: OCRak antzeko
+        karaktereak nahasten ditu.</string>
+
+    <string name="decrypt_title">Deszifratu</string>
+    <string name="scan_qr_button">Eskaneatu txartelaren QRa</string>
+    <string name="read_from_qr">QRtik irakurrita. Pasahitz nagusia baino ez da falta.</string>
+    <string name="card_named">Txartela: %1$s</string>
+    <string name="looks_incomplete">Osatu gabe dagoela dirudi: karaktereak falta dira.</string>
+    <string name="decrypt_button">Deszifratu</string>
+    <string name="password_result">Pasahitza</string>
+    <string name="clipboard_cleared">Kopiatu eta %1$d s ondoren ezabatzen da, edo aplikaziora
+        itzultzean — Androidek ez dio aplikazio bati ere arbela ukitzen uzten bigarren
+        planoan.</string>
+    <string name="clipboard_clear_now">Ezabatu orain</string>
+
+    <string name="error_bad_key">Ez dator bat. Edo pasahitz nagusia ez da hori, edo
+        karaktereren bat gaizki irakurri da. Alderatu laukiak paperarekin.</string>
+    <string name="error_empty_master">Pasahitz nagusia hutsik dago.</string>
+    <string name="error_invalid_character">Karaktere baliogabea: %1$s</string>
+    <string name="error_too_short">Kodea laburregia da.</string>
+    <string name="error_unsupported_version">Txartel honek aplikazioaren bertsio honek
+        jadanik irakurtzen ez duen formatua du (%1$s).</string>
+
+    <string name="entry_status">%1$d karaktere · %2$d. posizioa</string>
+    <string name="backspace">Ezabatu</string>
+    <string name="clear">Hustu</string>
+
+    <string name="torch">Linterna</string>
+    <string name="take_photo">Atera argazkia</string>
+    <string name="camera_open_failed">Ezin izan da kamera ireki: %1$s</string>
+    <string name="photo_failed">Ezin izan da argazkia atera: %1$s</string>
+    <string name="photo_unreadable">Ezin izan da argazkia irakurri</string>
+    <string name="qr_aim">Apuntatu txartelaren QRari.</string>
+    <string name="qr_not_ours">QR hori ez da aplikazio honetakoa.</string>
+    <string name="qr_found">Txartela aurkitu da: %1$s</string>
+    <string name="qr_use">Erabili txartel hau</string>
+
+    <string name="sheet_title">Inprimatzeko orria</string>
+    <string name="sheet_empty">Oraindik ez dago txartelik. Joan Zifratu atalera, zifratu
+        pasahitz bat eta sakatu \"Gehitu orrira eta hurrengoa\". %1$d sartzen dira orriko, 4
+        zutabetan.</string>
+    <string name="sheet_memory_warning">Zerrenda hau aplikazioa irekita dagoen bitartean
+        baino ez da existitzen. Inprimatu itxi aurretik.</string>
+    <string name="print_button">Inprimatu edo gorde PDF gisa</string>
+    <string name="clear_sheet">Hustu orria</string>
+    <string name="confirm_clear_title">Orria hustu?</string>
+    <string name="confirm_clear_text">%1$d txartelak baztertuko dira. Ez dago kopiarik inon:
+        inprimatu ez badituzu, galdu egingo dituzu.</string>
+    <string name="remove">Kendu</string>
+    <string name="sheet_page">%1$d. orria</string>
+    <string name="layout_title">Txartelak orriko</string>
+    <string name="layout_columns">Zutabeak: %1$d</string>
+    <string name="layout_rows">Errenkadak: %1$d</string>
+    <string name="layout_summary">%1$d orriko · txartela %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">QRa %1$s mm-ra jaisten da eta zaila izan daiteke
+        eskaneatzea. Gutxi gorabehera %2$s mm-tik behera fidagarritasuna jaitsi egiten da —
+        jarri txartel gutxiago orriko.</string>
+
+    <plurals name="card_count">
+        <item quantity="one">txartel %1$d</item>
+        <item quantity="other">%1$d txartel</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="one">A4 orri %1$d</item>
+        <item quantity="other">%1$d A4 orri</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="one">txartel %1$d orrian, inprimatzeko zain.</item>
+        <item quantity="other">%1$d txartel orrian, inprimatzeko zain.</item>
+    </plurals>
+
+    <string name="print_header_title">PaperCript — kode zifratuak</string>
+    <string name="print_header_warning">Pasahitz nagusirik gabe txartel hauek ez dute
+        ezertarako balio. Ez idatzi hemen.</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Every string sits on a single line on purpose: Android joins wrapped lines
+    with a space, and in Japanese that space lands mid-sentence, where it does
+    not belong.
+-->
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <string name="tab_encrypt">暗号化</string>
+    <string name="tab_decrypt">復号</string>
+    <string name="tab_sheet">用紙</string>
+
+    <string name="cancel">キャンセル</string>
+    <string name="copy">コピー</string>
+    <string name="show">表示</string>
+    <string name="hide">非表示</string>
+    <string name="grant_camera">カメラ権限を許可</string>
+    <string name="deriving_key">鍵を導出しています…</string>
+    <string name="no_label">(ラベルなし)</string>
+
+    <string name="encrypt_title">暗号化</string>
+    <string name="encrypt_intro">カードに載せるコードを生成します。ラベルはカードを見分けるためのメモにすぎません。</string>
+    <string name="label_field">ラベル(例:仕事用 Gmail)</string>
+    <string name="label_field_help">カードを見分けるためだけのものです。暗号化には影響せず、後から変更できます。</string>
+    <string name="password_field">保存するパスワード</string>
+    <string name="scan_password_button">カメラでパスワードを読み取る</string>
+    <string name="generate">生成</string>
+    <string name="generator_length">長さ:%1$d</string>
+    <string name="generator_symbols">記号</string>
+    <string name="generator_entropy">≈ %1$d ビットのエントロピー</string>
+    <string name="master_field">マスターパスワード</string>
+    <string name="master_help">どこにも保存されません。忘れると復旧はできません。</string>
+    <string name="encrypt_button">暗号化</string>
+    <string name="encrypted_code">✓ 暗号化しました — 用紙に追加できます</string>
+    <string name="error_encrypt_failed">暗号化できませんでした:%1$s</string>
+    <string name="code_footer">%1$d 文字。I、L、O、U は使いません。そう見えても 1、1、0、V です。</string>
+    <string name="add_to_sheet">用紙に追加して次へ</string>
+    <string name="handwrite_note">手書きで写すこともできます。その場合は、元のパスワードを捨てる前に復号して書き写した内容を確認してください。</string>
+    <string name="capture_hint_password">枠内にパスワードを収めてください。印刷された文字なら読めますが、手書きはあてになりません。</string>
+    <string name="nothing_read">何も読み取れませんでした。明るい場所で試してください。</string>
+    <string name="pick_password_title">どれがパスワードですか?</string>
+    <string name="pick_password_help">正しい行をタップしてください。文字認識は似た文字を取り違えるので、必ず確認を。</string>
+
+    <string name="decrypt_title">復号</string>
+    <string name="scan_qr_button">カードの QR をスキャン</string>
+    <string name="read_from_qr">QR から読み取りました。あとはマスターパスワードだけです。</string>
+    <string name="card_named">カード:%1$s</string>
+    <string name="looks_incomplete">不完全なようです:文字が足りません。</string>
+    <string name="decrypt_button">復号</string>
+    <string name="password_result">パスワード</string>
+    <string name="clipboard_cleared">コピーから %1$d 秒後、またはアプリに戻ったときに消去されます — Android はバックグラウンドのアプリにクリップボードを触らせません。</string>
+    <string name="clipboard_clear_now">今すぐ消去</string>
+
+    <string name="error_bad_key">合いません。マスターパスワードが違うか、文字を読み違えています。紙と見比べて各マスを確認してください。</string>
+    <string name="error_empty_master">マスターパスワードが空です。</string>
+    <string name="error_invalid_character">無効な文字:%1$s</string>
+    <string name="error_too_short">コードが短すぎます。</string>
+    <string name="error_unsupported_version">このカードは、現在のバージョンでは読めない形式です (%1$s)。</string>
+
+    <string name="entry_status">%1$d 文字 · %2$d 文字目</string>
+    <string name="backspace">削除</string>
+    <string name="clear">クリア</string>
+
+    <string name="torch">ライト</string>
+    <string name="take_photo">撮影</string>
+    <string name="camera_open_failed">カメラを開けませんでした:%1$s</string>
+    <string name="photo_failed">撮影できませんでした:%1$s</string>
+    <string name="photo_unreadable">写真を読み取れませんでした</string>
+    <string name="qr_aim">カードの QR に向けてください。</string>
+    <string name="qr_not_ours">この QR はこのアプリのものではありません。</string>
+    <string name="qr_found">カードを検出:%1$s</string>
+    <string name="qr_use">このカードを使う</string>
+
+    <string name="sheet_title">印刷する用紙</string>
+    <string name="sheet_empty">まだカードがありません。「暗号化」でパスワードを暗号化し、\"用紙に追加して次へ\" をタップしてください。1 枚に 4 列で %1$d 枚入ります。</string>
+    <string name="sheet_memory_warning">この一覧はアプリを開いている間しか存在しません。閉じる前に印刷してください。</string>
+    <string name="print_button">印刷または PDF で保存</string>
+    <string name="clear_sheet">用紙を空にする</string>
+    <string name="confirm_clear_title">用紙を空にしますか?</string>
+    <string name="confirm_clear_text">%1$d 枚のカードを破棄します。控えはどこにもありません。印刷していなければ失われます。</string>
+    <string name="remove">削除</string>
+    <string name="sheet_page">用紙 %1$d</string>
+    <string name="layout_title">1 枚あたりのカード数</string>
+    <string name="layout_columns">列:%1$d</string>
+    <string name="layout_rows">行:%1$d</string>
+    <string name="layout_summary">1 枚に %1$d 枚 · カード %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">QR が %1$s mm まで小さくなり、読み取りにくくなる場合があります。約 %2$s mm を下回ると信頼性が落ちます — 1 枚あたりの枚数を減らしてください。</string>
+
+    <plurals name="card_count">
+        <item quantity="other">カード %1$d 枚</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="other">A4 用紙 %1$d 枚</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="other">用紙にカード %1$d 枚、印刷待ちです。</item>
+    </plurals>
+
+    <string name="print_header_title">PaperCript — 暗号化コード</string>
+    <string name="print_header_warning">マスターパスワードがなければ、これらのカードは何の価値もありません。ここに書かないでください。</string>
+</resources>

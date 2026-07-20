@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <!-- Pestañas -->
+    <string name="tab_encrypt">Cifrar</string>
+    <string name="tab_decrypt">Descifrar</string>
+    <string name="tab_sheet">Hoja</string>
+
+    <!-- Comunes -->
+    <string name="cancel">Cancelar</string>
+    <string name="copy">Copiar</string>
+    <string name="show">Mostrar</string>
+    <string name="hide">Ocultar</string>
+    <string name="grant_camera">Dar permiso de cámara</string>
+    <string name="deriving_key">Derivando clave…</string>
+    <string name="no_label">(sin etiqueta)</string>
+
+    <!-- Pantalla de cifrar -->
+    <string name="encrypt_title">Cifrar</string>
+    <string name="encrypt_intro">Genera el código que va en la tarjeta. La etiqueta es solo
+        una nota para que distingas unas tarjetas de otras.</string>
+    <string name="label_field">Etiqueta (p. ej. Gmail del trabajo)</string>
+    <string name="label_field_help">Solo para que reconozcas la tarjeta. No afecta al
+        cifrado, y puedes cambiarla más adelante.</string>
+    <string name="password_field">Contraseña a guardar</string>
+    <string name="scan_password_button">Leer la contraseña con la cámara</string>
+    <string name="generate">Generar</string>
+    <string name="generator_length">Longitud: %1$d</string>
+    <string name="generator_symbols">Símbolos</string>
+    <string name="generator_entropy">≈ %1$d bits de entropía</string>
+    <string name="master_field">Clave maestra</string>
+    <string name="master_help">No se guarda en ningún sitio. Si la olvidas, no hay
+        recuperación.</string>
+    <string name="encrypt_button">Cifrar</string>
+    <string name="encrypted_code">✓ Cifrada — lista para la hoja</string>
+    <string name="error_encrypt_failed">No se ha podido cifrar: %1$s</string>
+    <string name="code_footer">%1$d caracteres. No hay I, L, O ni U: si crees ver una, es
+        1, 1, 0 o V.</string>
+    <string name="add_to_sheet">Añadir a la hoja y siguiente</string>
+    <string name="handwrite_note">También puedes copiarlo a mano a una libreta. Si lo
+        haces, comprueba lo escrito descifrándolo antes de tirar la contraseña
+        original.</string>
+    <string name="capture_hint_password">Encuadra la contraseña dentro del recuadro.
+        Funciona con texto impreso; con letra a mano no cuentes con ello.</string>
+    <string name="nothing_read">No se ha leído nada. Prueba con más luz.</string>
+    <string name="pick_password_title">¿Cuál es la contraseña?</string>
+    <string name="pick_password_help">Toca la línea correcta. Compruébala: el OCR confunde
+        caracteres parecidos.</string>
+
+    <!-- Pantalla de descifrar -->
+    <string name="decrypt_title">Descifrar</string>
+    <string name="scan_qr_button">Escanear el QR de la tarjeta</string>
+    <string name="read_from_qr">Leído del QR. Solo falta la clave maestra.</string>
+    <string name="card_named">Tarjeta: %1$s</string>
+    <string name="looks_incomplete">Parece incompleto: faltan caracteres.</string>
+    <string name="decrypt_button">Descifrar</string>
+    <string name="password_result">Contraseña</string>
+    <string name="clipboard_cleared">Se borra a los %1$d s de copiarla, o al volver a la app
+        — Android no deja a ninguna app tocar el portapapeles desde segundo plano.</string>
+    <string name="clipboard_clear_now">Borrar ya</string>
+
+    <!-- Errores al descifrar -->
+    <string name="error_bad_key">No cuadra. O la clave maestra no es esa, o hay algún
+        carácter mal leído. Repasa las casillas contra el papel.</string>
+    <string name="error_empty_master">La clave maestra está vacía.</string>
+    <string name="error_invalid_character">Carácter no válido: %1$s</string>
+    <string name="error_too_short">El código es demasiado corto.</string>
+    <string name="error_unsupported_version">Esta tarjeta es de un formato que esta versión
+        de la app ya no lee (%1$s).</string>
+
+    <!-- Teclado de entrada -->
+    <string name="entry_status">%1$d caracteres · posición %2$d</string>
+    <string name="backspace">Borrar</string>
+    <string name="clear">Vaciar</string>
+
+    <!-- Cámara -->
+    <string name="torch">Linterna</string>
+    <string name="take_photo">Hacer foto</string>
+    <string name="camera_open_failed">No se ha podido abrir la cámara: %1$s</string>
+    <string name="photo_failed">No se ha podido hacer la foto: %1$s</string>
+    <string name="photo_unreadable">No se ha podido leer la foto</string>
+    <string name="qr_aim">Apunta al QR de la tarjeta.</string>
+    <string name="qr_not_ours">Ese QR no es de esta app.</string>
+    <string name="qr_found">Tarjeta encontrada: %1$s</string>
+    <string name="qr_use">Usar esta tarjeta</string>
+
+    <!-- Pantalla de la hoja -->
+    <string name="sheet_title">Hoja para imprimir</string>
+    <string name="sheet_empty">Todavía no hay tarjetas. Ve a Cifrar, cifra una contraseña y
+        pulsa \"Añadir a la hoja y siguiente\". Entran %1$d por folio, en 4
+        columnas.</string>
+    <string name="sheet_memory_warning">Esta lista solo existe mientras la app está
+        abierta. Imprime antes de cerrarla.</string>
+    <string name="print_button">Imprimir o guardar en PDF</string>
+    <string name="clear_sheet">Vaciar la hoja</string>
+    <string name="confirm_clear_title">¿Vaciar la hoja?</string>
+    <string name="confirm_clear_text">Se descartan las %1$d tarjetas. No hay copia en
+        ningún sitio: si no las has impreso, las pierdes.</string>
+    <string name="remove">Quitar</string>
+    <string name="sheet_page">Folio %1$d</string>
+    <string name="layout_title">Tarjetas por folio</string>
+    <string name="layout_columns">Columnas: %1$d</string>
+    <string name="layout_rows">Filas: %1$d</string>
+    <string name="layout_summary">%1$d por folio · tarjeta %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">El QR se queda en %1$s mm y puede costar escanearlo. Por
+        debajo de unos %2$s mm la fiabilidad cae — pon menos tarjetas por folio.</string>
+
+    <plurals name="card_count">
+        <item quantity="one">%1$d tarjeta</item>
+        <item quantity="other">%1$d tarjetas</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="one">%1$d folio A4</item>
+        <item quantity="other">%1$d folios A4</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="one">%1$d tarjeta en la hoja, pendiente de imprimir.</item>
+        <item quantity="other">%1$d tarjetas en la hoja, pendientes de imprimir.</item>
+    </plurals>
+
+    <!-- Hoja impresa -->
+    <string name="print_header_title">PaperCript — códigos cifrados</string>
+    <string name="print_header_warning">Sin la clave maestra estas tarjetas no valen nada.
+        No la apuntes aquí.</string>
+</resources>

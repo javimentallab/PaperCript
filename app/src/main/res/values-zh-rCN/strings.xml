@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Every string sits on a single line on purpose: Android joins wrapped lines
+    with a space, and in Chinese that space lands mid-sentence, where it does
+    not belong.
+-->
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <string name="tab_encrypt">加密</string>
+    <string name="tab_decrypt">解密</string>
+    <string name="tab_sheet">纸张</string>
+
+    <string name="cancel">取消</string>
+    <string name="copy">复制</string>
+    <string name="show">显示</string>
+    <string name="hide">隐藏</string>
+    <string name="grant_camera">授予相机权限</string>
+    <string name="deriving_key">正在派生密钥…</string>
+    <string name="no_label">(无标签)</string>
+
+    <string name="encrypt_title">加密</string>
+    <string name="encrypt_intro">生成卡片上的代码。标签只是便于你区分卡片的备注。</string>
+    <string name="label_field">标签(例如:工作邮箱)</string>
+    <string name="label_field_help">仅用于辨认卡片。不影响加密,之后可以修改。</string>
+    <string name="password_field">要保存的密码</string>
+    <string name="scan_password_button">用相机读取密码</string>
+    <string name="generate">生成</string>
+    <string name="generator_length">长度:%1$d</string>
+    <string name="generator_symbols">符号</string>
+    <string name="generator_entropy">≈ %1$d 位熵</string>
+    <string name="master_field">主密码</string>
+    <string name="master_help">不会保存在任何地方。一旦忘记,无法找回。</string>
+    <string name="encrypt_button">加密</string>
+    <string name="encrypted_code">✓ 已加密 — 可加入纸张</string>
+    <string name="error_encrypt_failed">加密失败:%1$s</string>
+    <string name="code_footer">%1$d 个字符。不含 I、L、O 和 U:看起来像的话,其实是 1、1、0 或 V。</string>
+    <string name="add_to_sheet">加入纸张并继续</string>
+    <string name="handwrite_note">你也可以手抄。若手抄,请在丢弃原件前先解密核对所写内容。</string>
+    <string name="capture_hint_password">将密码对准取景框。适用于印刷文字;手写字迹不要指望。</string>
+    <string name="nothing_read">未读取到内容。请在光线更充足处重试。</string>
+    <string name="pick_password_title">哪一个是密码?</string>
+    <string name="pick_password_help">点选正确的一行。请核对:文字识别会混淆相似字符。</string>
+
+    <string name="decrypt_title">解密</string>
+    <string name="scan_qr_button">扫描卡片二维码</string>
+    <string name="read_from_qr">已从二维码读取。只差主密码。</string>
+    <string name="card_named">卡片:%1$s</string>
+    <string name="looks_incomplete">看起来不完整:缺少字符。</string>
+    <string name="decrypt_button">解密</string>
+    <string name="password_result">密码</string>
+    <string name="clipboard_cleared">复制 %1$d 秒后清除,或在你返回应用时清除 — Android 不允许任何应用在后台操作剪贴板。</string>
+    <string name="clipboard_clear_now">立即清除</string>
+
+    <string name="error_bad_key">对不上。要么主密码不对,要么有字符读错了。请对照纸张核对各格。</string>
+    <string name="error_empty_master">主密码为空。</string>
+    <string name="error_invalid_character">无效字符:%1$s</string>
+    <string name="error_too_short">代码太短。</string>
+    <string name="error_unsupported_version">此卡片使用的格式,当前版本已不再支持 (%1$s)。</string>
+
+    <string name="entry_status">%1$d 个字符 · 第 %2$d 位</string>
+    <string name="backspace">删除</string>
+    <string name="clear">清空</string>
+
+    <string name="torch">闪光灯</string>
+    <string name="take_photo">拍照</string>
+    <string name="camera_open_failed">无法打开相机:%1$s</string>
+    <string name="photo_failed">无法拍照:%1$s</string>
+    <string name="photo_unreadable">无法读取照片</string>
+    <string name="qr_aim">对准卡片上的二维码。</string>
+    <string name="qr_not_ours">该二维码不属于本应用。</string>
+    <string name="qr_found">找到卡片:%1$s</string>
+    <string name="qr_use">使用这张卡片</string>
+
+    <string name="sheet_title">待打印纸张</string>
+    <string name="sheet_empty">还没有卡片。前往「加密」,加密一个密码后点击\"加入纸张并继续\"。每张纸可放 %1$d 张,分 4 列。</string>
+    <string name="sheet_memory_warning">此列表仅在应用打开期间存在。请在关闭前打印。</string>
+    <string name="print_button">打印或保存为 PDF</string>
+    <string name="clear_sheet">清空纸张</string>
+    <string name="confirm_clear_title">要清空纸张吗?</string>
+    <string name="confirm_clear_text">将丢弃这 %1$d 张卡片。任何地方都没有副本:若未打印,就会丢失。</string>
+    <string name="remove">移除</string>
+    <string name="sheet_page">第 %1$d 张</string>
+    <string name="layout_title">每张纸的卡片数</string>
+    <string name="layout_columns">列数:%1$d</string>
+    <string name="layout_rows">行数:%1$d</string>
+    <string name="layout_summary">每张 %1$d 个 · 卡片 %2$s × %3$s 毫米 · 二维码 %4$s 毫米</string>
+    <string name="layout_qr_small">二维码缩小到 %1$s 毫米,可能不易扫描。低于约 %2$s 毫米可靠性会下降 — 请减少每张纸的卡片数。</string>
+
+    <plurals name="card_count">
+        <item quantity="other">%1$d 张卡片</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="other">%1$d 张 A4 纸</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="other">纸上有 %1$d 张卡片,待打印。</item>
+    </plurals>
+
+    <string name="print_header_title">PaperCript — 加密代码</string>
+    <string name="print_header_warning">没有主密码,这些卡片毫无用处。请勿把主密码写在此处。</string>
+</resources>

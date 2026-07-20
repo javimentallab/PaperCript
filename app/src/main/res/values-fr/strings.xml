@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <string name="tab_encrypt">Chiffrer</string>
+    <string name="tab_decrypt">Déchiffrer</string>
+    <string name="tab_sheet">Feuille</string>
+
+    <string name="cancel">Annuler</string>
+    <string name="copy">Copier</string>
+    <string name="show">Afficher</string>
+    <string name="hide">Masquer</string>
+    <string name="grant_camera">Autoriser l\'appareil photo</string>
+    <string name="deriving_key">Dérivation de la clé…</string>
+    <string name="no_label">(sans libellé)</string>
+
+    <string name="encrypt_title">Chiffrer</string>
+    <string name="encrypt_intro">Génère le code qui figurera sur la carte. Le libellé n\'est
+        qu\'une note pour distinguer vos cartes.</string>
+    <string name="label_field">Libellé (ex. Gmail pro)</string>
+    <string name="label_field_help">Sert uniquement à reconnaître la carte. N\'affecte pas le
+        chiffrement, et vous pouvez le modifier plus tard.</string>
+    <string name="password_field">Mot de passe à enregistrer</string>
+    <string name="scan_password_button">Lire le mot de passe avec l\'appareil photo</string>
+    <string name="generate">Générer</string>
+    <string name="generator_length">Longueur : %1$d</string>
+    <string name="generator_symbols">Symboles</string>
+    <string name="generator_entropy">≈ %1$d bits d\'entropie</string>
+    <string name="master_field">Mot de passe maître</string>
+    <string name="master_help">Jamais enregistré nulle part. Si vous l\'oubliez, aucune
+        récupération n\'est possible.</string>
+    <string name="encrypt_button">Chiffrer</string>
+    <string name="encrypted_code">✓ Chiffré — prêt pour la feuille</string>
+    <string name="error_encrypt_failed">Échec du chiffrement : %1$s</string>
+    <string name="code_footer">%1$d caractères. Il n\'y a ni I, ni L, ni O, ni U : si vous
+        croyez en voir un, c\'est 1, 1, 0 ou V.</string>
+    <string name="add_to_sheet">Ajouter à la feuille et continuer</string>
+    <string name="handwrite_note">Vous pouvez aussi le recopier à la main. Dans ce cas,
+        vérifiez ce que vous avez écrit en le déchiffrant avant de jeter l\'original.</string>
+    <string name="capture_hint_password">Cadrez le mot de passe dans le rectangle. Fonctionne
+        avec du texte imprimé ; n\'y comptez pas pour de l\'écriture manuscrite.</string>
+    <string name="nothing_read">Rien n\'a été lu. Réessayez avec plus de lumière.</string>
+    <string name="pick_password_title">Lequel est le mot de passe ?</string>
+    <string name="pick_password_help">Touchez la bonne ligne. Vérifiez-la : l\'OCR confond
+        les caractères similaires.</string>
+
+    <string name="decrypt_title">Déchiffrer</string>
+    <string name="scan_qr_button">Scanner le QR de la carte</string>
+    <string name="read_from_qr">Lu depuis le QR. Il ne manque que le mot de passe
+        maître.</string>
+    <string name="card_named">Carte : %1$s</string>
+    <string name="looks_incomplete">Semble incomplet : il manque des caractères.</string>
+    <string name="decrypt_button">Déchiffrer</string>
+    <string name="password_result">Mot de passe</string>
+    <string name="clipboard_cleared">Effacé %1$d s après la copie, ou à votre retour dans
+        l\'application — Android n\'autorise aucune application à toucher au presse-papiers
+        en arrière-plan.</string>
+    <string name="clipboard_clear_now">Effacer maintenant</string>
+
+    <string name="error_bad_key">Cela ne correspond pas. Soit le mot de passe maître est
+        incorrect, soit un caractère a été mal lu. Comparez les cases avec le papier.</string>
+    <string name="error_empty_master">Le mot de passe maître est vide.</string>
+    <string name="error_invalid_character">Caractère non valide : %1$s</string>
+    <string name="error_too_short">Le code est trop court.</string>
+    <string name="error_unsupported_version">Cette carte utilise un format que cette version
+        de l\'application ne lit plus (%1$s).</string>
+
+    <string name="entry_status">%1$d caractères · position %2$d</string>
+    <string name="backspace">Effacer</string>
+    <string name="clear">Vider</string>
+
+    <string name="torch">Lampe</string>
+    <string name="take_photo">Prendre une photo</string>
+    <string name="camera_open_failed">Impossible d\'ouvrir l\'appareil photo : %1$s</string>
+    <string name="photo_failed">Impossible de prendre la photo : %1$s</string>
+    <string name="photo_unreadable">Impossible de lire la photo</string>
+    <string name="qr_aim">Visez le QR de la carte.</string>
+    <string name="qr_not_ours">Ce QR ne provient pas de cette application.</string>
+    <string name="qr_found">Carte trouvée : %1$s</string>
+    <string name="qr_use">Utiliser cette carte</string>
+
+    <string name="sheet_title">Feuille à imprimer</string>
+    <string name="sheet_empty">Aucune carte pour l\'instant. Allez dans Chiffrer, chiffrez un
+        mot de passe et touchez \"Ajouter à la feuille et continuer\". %1$d tiennent sur une
+        feuille, en 4 colonnes.</string>
+    <string name="sheet_memory_warning">Cette liste n\'existe que tant que l\'application est
+        ouverte. Imprimez avant de la fermer.</string>
+    <string name="print_button">Imprimer ou enregistrer en PDF</string>
+    <string name="clear_sheet">Vider la feuille</string>
+    <string name="confirm_clear_title">Vider la feuille ?</string>
+    <string name="confirm_clear_text">Les %1$d cartes seront supprimées. Il n\'existe aucune
+        copie : si vous ne les avez pas imprimées, elles sont perdues.</string>
+    <string name="remove">Supprimer</string>
+    <string name="sheet_page">Feuille %1$d</string>
+    <string name="layout_title">Cartes par feuille</string>
+    <string name="layout_columns">Colonnes : %1$d</string>
+    <string name="layout_rows">Lignes : %1$d</string>
+    <string name="layout_summary">%1$d par feuille · carte %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">Le QR tombe à %1$s mm et peut être difficile à scanner.
+        En dessous d\'environ %2$s mm la fiabilité chute — mettez moins de cartes par
+        feuille.</string>
+
+    <plurals name="card_count">
+        <item quantity="one">%1$d carte</item>
+        <item quantity="other">%1$d cartes</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="one">%1$d feuille A4</item>
+        <item quantity="other">%1$d feuilles A4</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="one">%1$d carte sur la feuille, en attente d\'impression.</item>
+        <item quantity="other">%1$d cartes sur la feuille, en attente d\'impression.</item>
+    </plurals>
+
+    <string name="print_header_title">PaperCript — codes chiffrés</string>
+    <string name="print_header_warning">Sans le mot de passe maître, ces cartes ne valent
+        rien. Ne l\'écrivez pas ici.</string>
+</resources>

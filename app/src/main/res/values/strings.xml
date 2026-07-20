@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default locale: English. Other languages live in values-<code>/strings.xml. -->
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <!-- Tabs -->
+    <string name="tab_encrypt">Encrypt</string>
+    <string name="tab_decrypt">Decrypt</string>
+    <string name="tab_sheet">Sheet</string>
+
+    <!-- Shared -->
+    <string name="cancel">Cancel</string>
+    <string name="copy">Copy</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="grant_camera">Grant camera permission</string>
+    <string name="deriving_key">Deriving key…</string>
+    <string name="no_label">(no label)</string>
+
+    <!-- Encrypt screen -->
+    <string name="encrypt_title">Encrypt</string>
+    <string name="encrypt_intro">Creates the code that goes on the card. The label is
+        just a note so you can tell your cards apart.</string>
+    <string name="label_field">Label (e.g. Work Gmail)</string>
+    <string name="label_field_help">Only so you recognise the card. It does not affect
+        encryption, and you can change it later.</string>
+    <string name="password_field">Password to store</string>
+    <string name="scan_password_button">Read the password with the camera</string>
+    <string name="generate">Generate</string>
+    <string name="generator_length">Length: %1$d</string>
+    <string name="generator_symbols">Symbols</string>
+    <string name="generator_entropy">≈ %1$d bits of entropy</string>
+    <string name="master_field">Master password</string>
+    <string name="master_help">Never stored anywhere. If you forget it, there is no
+        recovery.</string>
+    <string name="encrypt_button">Encrypt</string>
+    <string name="encrypted_code">✓ Encrypted — ready for the sheet</string>
+    <string name="error_encrypt_failed">Could not encrypt: %1$s</string>
+    <string name="code_footer">%1$d characters. There is no I, L, O or U: if you think you
+        see one, it is 1, 1, 0 or V.</string>
+    <string name="add_to_sheet">Add to sheet and next</string>
+    <string name="handwrite_note">You can also copy it into a notebook by hand. If you do,
+        check what you wrote by decrypting it before throwing the original away.</string>
+    <string name="capture_hint_password">Frame the password inside the box. Works with
+        printed text; do not count on it for handwriting.</string>
+    <string name="nothing_read">Nothing was read. Try again with more light.</string>
+    <string name="pick_password_title">Which one is the password?</string>
+    <string name="pick_password_help">Tap the right line. Check it: OCR confuses similar
+        characters.</string>
+
+    <!-- Decrypt screen -->
+    <string name="decrypt_title">Decrypt</string>
+    <string name="scan_qr_button">Scan the card QR</string>
+    <string name="read_from_qr">Read from the QR. Only the master password is
+        missing.</string>
+    <string name="card_named">Card: %1$s</string>
+    <string name="looks_incomplete">Looks incomplete: characters are missing.</string>
+    <string name="decrypt_button">Decrypt</string>
+    <string name="password_result">Password</string>
+    <string name="clipboard_cleared">Cleared %1$d s after copying, or when you come back to
+        the app — Android does not let any app touch the clipboard from the background.</string>
+    <string name="clipboard_clear_now">Clear now</string>
+
+    <!-- Decrypt errors -->
+    <string name="error_bad_key">That does not add up. Either the master password is wrong,
+        or a character was misread. Check the boxes against the paper.</string>
+    <string name="error_empty_master">The master password is empty.</string>
+    <string name="error_invalid_character">Invalid character: %1$s</string>
+    <string name="error_too_short">The code is too short.</string>
+    <string name="error_unsupported_version">This card uses a format that this version of
+        the app no longer reads (%1$s).</string>
+
+    <!-- Code entry keypad -->
+    <string name="entry_status">%1$d characters · position %2$d</string>
+    <string name="backspace">Delete</string>
+    <string name="clear">Clear</string>
+
+    <!-- Camera -->
+    <string name="torch">Torch</string>
+    <string name="take_photo">Take photo</string>
+    <string name="camera_open_failed">Could not open the camera: %1$s</string>
+    <string name="photo_failed">Could not take the photo: %1$s</string>
+    <string name="photo_unreadable">Could not read the photo</string>
+    <string name="qr_aim">Point at the QR on the card.</string>
+    <string name="qr_not_ours">That QR is not from this app.</string>
+    <string name="qr_found">Card found: %1$s</string>
+    <string name="qr_use">Use this card</string>
+
+    <!-- Sheet screen -->
+    <string name="sheet_title">Sheet to print</string>
+    <string name="sheet_empty">No cards yet. Go to Encrypt, encrypt a password and tap
+        \"Add to sheet and next\". %1$d fit on one sheet, in 4 columns.</string>
+    <string name="sheet_memory_warning">This list only exists while the app is open. Print
+        it before you close it.</string>
+    <string name="print_button">Print or save as PDF</string>
+    <string name="clear_sheet">Clear the sheet</string>
+    <string name="confirm_clear_title">Clear the sheet?</string>
+    <string name="confirm_clear_text">The %1$d cards will be discarded. There is no copy
+        anywhere: if you have not printed them, you lose them.</string>
+    <string name="remove">Remove</string>
+    <string name="sheet_page">Sheet %1$d</string>
+    <string name="layout_title">Cards per sheet</string>
+    <string name="layout_columns">Columns: %1$d</string>
+    <string name="layout_rows">Rows: %1$d</string>
+    <string name="layout_summary">%1$d per sheet · card %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">The QR drops to %1$s mm and may be hard to scan. Below
+        about %2$s mm reliability falls off — use fewer cards per sheet.</string>
+
+    <plurals name="card_count">
+        <item quantity="one">%1$d card</item>
+        <item quantity="other">%1$d cards</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="one">%1$d A4 sheet</item>
+        <item quantity="other">%1$d A4 sheets</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="one">%1$d card on the sheet, waiting to be printed.</item>
+        <item quantity="other">%1$d cards on the sheet, waiting to be printed.</item>
+    </plurals>
+
+    <!-- Printed sheet -->
+    <string name="print_header_title">PaperCript — encrypted codes</string>
+    <string name="print_header_warning">Without the master password these cards are
+        worthless. Do not write it here.</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <string name="tab_encrypt">Cifra</string>
+    <string name="tab_decrypt">Decifra</string>
+    <string name="tab_sheet">Foglio</string>
+
+    <string name="cancel">Annulla</string>
+    <string name="copy">Copia</string>
+    <string name="show">Mostra</string>
+    <string name="hide">Nascondi</string>
+    <string name="grant_camera">Concedi accesso alla fotocamera</string>
+    <string name="deriving_key">Derivazione della chiave…</string>
+    <string name="no_label">(senza etichetta)</string>
+
+    <string name="encrypt_title">Cifra</string>
+    <string name="encrypt_intro">Genera il codice che finisce sulla tessera. L\'etichetta è
+        solo una nota per distinguere le tue tessere.</string>
+    <string name="label_field">Etichetta (es. Gmail lavoro)</string>
+    <string name="label_field_help">Serve solo a riconoscere la tessera. Non influisce sulla
+        cifratura e puoi cambiarla in seguito.</string>
+    <string name="password_field">Password da conservare</string>
+    <string name="scan_password_button">Leggi la password con la fotocamera</string>
+    <string name="generate">Genera</string>
+    <string name="generator_length">Lunghezza: %1$d</string>
+    <string name="generator_symbols">Simboli</string>
+    <string name="generator_entropy">≈ %1$d bit di entropia</string>
+    <string name="master_field">Password principale</string>
+    <string name="master_help">Non viene salvata da nessuna parte. Se la dimentichi, non c\'è
+        modo di recuperarla.</string>
+    <string name="encrypt_button">Cifra</string>
+    <string name="encrypted_code">✓ Cifrata — pronta per il foglio</string>
+    <string name="error_encrypt_failed">Impossibile cifrare: %1$s</string>
+    <string name="code_footer">%1$d caratteri. Non esistono I, L, O né U: se credi di
+        vederne una, è 1, 1, 0 o V.</string>
+    <string name="add_to_sheet">Aggiungi al foglio e continua</string>
+    <string name="handwrite_note">Puoi anche ricopiarlo a mano. In tal caso, verifica quanto
+        scritto decifrandolo prima di buttare l\'originale.</string>
+    <string name="capture_hint_password">Inquadra la password nel riquadro. Funziona con
+        testo stampato; sulla scrittura a mano non farci conto.</string>
+    <string name="nothing_read">Non è stato letto nulla. Riprova con più luce.</string>
+    <string name="pick_password_title">Qual è la password?</string>
+    <string name="pick_password_help">Tocca la riga giusta. Controllala: l\'OCR confonde i
+        caratteri simili.</string>
+
+    <string name="decrypt_title">Decifra</string>
+    <string name="scan_qr_button">Scansiona il QR della tessera</string>
+    <string name="read_from_qr">Letto dal QR. Manca solo la password principale.</string>
+    <string name="card_named">Tessera: %1$s</string>
+    <string name="looks_incomplete">Sembra incompleto: mancano dei caratteri.</string>
+    <string name="decrypt_button">Decifra</string>
+    <string name="password_result">Password</string>
+    <string name="clipboard_cleared">Si cancella %1$d s dopo la copia, o quando torni
+        nell\'app — Android non permette a nessuna app di toccare gli appunti in
+        background.</string>
+    <string name="clipboard_clear_now">Cancella ora</string>
+
+    <string name="error_bad_key">Non torna. O la password principale è sbagliata, o un
+        carattere è stato letto male. Confronta le caselle con la carta.</string>
+    <string name="error_empty_master">La password principale è vuota.</string>
+    <string name="error_invalid_character">Carattere non valido: %1$s</string>
+    <string name="error_too_short">Il codice è troppo corto.</string>
+    <string name="error_unsupported_version">Questa tessera usa un formato che questa
+        versione dell\'app non legge più (%1$s).</string>
+
+    <string name="entry_status">%1$d caratteri · posizione %2$d</string>
+    <string name="backspace">Cancella</string>
+    <string name="clear">Svuota</string>
+
+    <string name="torch">Torcia</string>
+    <string name="take_photo">Scatta foto</string>
+    <string name="camera_open_failed">Impossibile aprire la fotocamera: %1$s</string>
+    <string name="photo_failed">Impossibile scattare la foto: %1$s</string>
+    <string name="photo_unreadable">Impossibile leggere la foto</string>
+    <string name="qr_aim">Inquadra il QR della tessera.</string>
+    <string name="qr_not_ours">Questo QR non è di questa app.</string>
+    <string name="qr_found">Tessera trovata: %1$s</string>
+    <string name="qr_use">Usa questa tessera</string>
+
+    <string name="sheet_title">Foglio da stampare</string>
+    <string name="sheet_empty">Ancora nessuna tessera. Vai su Cifra, cifra una password e
+        tocca \"Aggiungi al foglio e continua\". Ne entrano %1$d per foglio, su 4
+        colonne.</string>
+    <string name="sheet_memory_warning">Questo elenco esiste solo finché l\'app è aperta.
+        Stampa prima di chiuderla.</string>
+    <string name="print_button">Stampa o salva in PDF</string>
+    <string name="clear_sheet">Svuota il foglio</string>
+    <string name="confirm_clear_title">Svuotare il foglio?</string>
+    <string name="confirm_clear_text">Le %1$d tessere verranno scartate. Non esiste alcuna
+        copia: se non le hai stampate, le perdi.</string>
+    <string name="remove">Rimuovi</string>
+    <string name="sheet_page">Foglio %1$d</string>
+    <string name="layout_title">Tessere per foglio</string>
+    <string name="layout_columns">Colonne: %1$d</string>
+    <string name="layout_rows">Righe: %1$d</string>
+    <string name="layout_summary">%1$d per foglio · tessera %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">Il QR scende a %1$s mm e potrebbe risultare difficile da
+        scansionare. Sotto circa %2$s mm l\'affidabilità cala — metti meno tessere per
+        foglio.</string>
+
+    <plurals name="card_count">
+        <item quantity="one">%1$d tessera</item>
+        <item quantity="other">%1$d tessere</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="one">%1$d foglio A4</item>
+        <item quantity="other">%1$d fogli A4</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="one">%1$d tessera sul foglio, in attesa di stampa.</item>
+        <item quantity="other">%1$d tessere sul foglio, in attesa di stampa.</item>
+    </plurals>
+
+    <string name="print_header_title">PaperCript — codici cifrati</string>
+    <string name="print_header_warning">Senza la password principale queste tessere non
+        valgono nulla. Non scriverla qui.</string>
+</resources>

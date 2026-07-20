@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <string name="tab_encrypt">Verschlüsseln</string>
+    <string name="tab_decrypt">Entschlüsseln</string>
+    <string name="tab_sheet">Blatt</string>
+
+    <string name="cancel">Abbrechen</string>
+    <string name="copy">Kopieren</string>
+    <string name="show">Anzeigen</string>
+    <string name="hide">Verbergen</string>
+    <string name="grant_camera">Kamerazugriff erlauben</string>
+    <string name="deriving_key">Schlüssel wird abgeleitet…</string>
+    <string name="no_label">(ohne Bezeichnung)</string>
+
+    <string name="encrypt_title">Verschlüsseln</string>
+    <string name="encrypt_intro">Erzeugt den Code für die Karte. Die Bezeichnung ist nur eine
+        Notiz, damit du deine Karten auseinanderhalten kannst.</string>
+    <string name="label_field">Bezeichnung (z. B. Gmail Arbeit)</string>
+    <string name="label_field_help">Dient nur dazu, die Karte wiederzuerkennen. Sie
+        beeinflusst die Verschlüsselung nicht und lässt sich später ändern.</string>
+    <string name="password_field">Zu speicherndes Passwort</string>
+    <string name="scan_password_button">Passwort mit der Kamera einlesen</string>
+    <string name="generate">Erzeugen</string>
+    <string name="generator_length">Länge: %1$d</string>
+    <string name="generator_symbols">Sonderzeichen</string>
+    <string name="generator_entropy">≈ %1$d Bit Entropie</string>
+    <string name="master_field">Hauptpasswort</string>
+    <string name="master_help">Wird nirgends gespeichert. Wenn du es vergisst, gibt es keine
+        Wiederherstellung.</string>
+    <string name="encrypt_button">Verschlüsseln</string>
+    <string name="encrypted_code">✓ Verschlüsselt — bereit für das Blatt</string>
+    <string name="error_encrypt_failed">Verschlüsseln fehlgeschlagen: %1$s</string>
+    <string name="code_footer">%1$d Zeichen. Es gibt kein I, L, O oder U: was danach aussieht,
+        ist 1, 1, 0 oder V.</string>
+    <string name="add_to_sheet">Zum Blatt hinzufügen und weiter</string>
+    <string name="handwrite_note">Du kannst ihn auch von Hand abschreiben. Prüfe dann das
+        Geschriebene durch Entschlüsseln, bevor du das Original wegwirfst.</string>
+    <string name="capture_hint_password">Richte das Passwort im Rahmen aus. Funktioniert mit
+        gedrucktem Text; bei Handschrift verlass dich nicht darauf.</string>
+    <string name="nothing_read">Nichts erkannt. Versuch es mit mehr Licht.</string>
+    <string name="pick_password_title">Welches ist das Passwort?</string>
+    <string name="pick_password_help">Tippe die richtige Zeile an. Prüfe sie: die
+        Texterkennung verwechselt ähnliche Zeichen.</string>
+
+    <string name="decrypt_title">Entschlüsseln</string>
+    <string name="scan_qr_button">QR-Code der Karte scannen</string>
+    <string name="read_from_qr">Aus dem QR-Code gelesen. Es fehlt nur das
+        Hauptpasswort.</string>
+    <string name="card_named">Karte: %1$s</string>
+    <string name="looks_incomplete">Wirkt unvollständig: es fehlen Zeichen.</string>
+    <string name="decrypt_button">Entschlüsseln</string>
+    <string name="password_result">Passwort</string>
+    <string name="clipboard_cleared">Wird %1$d s nach dem Kopieren gelöscht oder sobald du
+        zur App zurückkehrst — Android lässt keine App im Hintergrund an die
+        Zwischenablage.</string>
+    <string name="clipboard_clear_now">Jetzt löschen</string>
+
+    <string name="error_bad_key">Das passt nicht. Entweder stimmt das Hauptpasswort nicht,
+        oder ein Zeichen wurde falsch gelesen. Vergleiche die Felder mit dem Papier.</string>
+    <string name="error_empty_master">Das Hauptpasswort ist leer.</string>
+    <string name="error_invalid_character">Ungültiges Zeichen: %1$s</string>
+    <string name="error_too_short">Der Code ist zu kurz.</string>
+    <string name="error_unsupported_version">Diese Karte nutzt ein Format, das diese
+        App-Version nicht mehr liest (%1$s).</string>
+
+    <string name="entry_status">%1$d Zeichen · Position %2$d</string>
+    <string name="backspace">Löschen</string>
+    <string name="clear">Leeren</string>
+
+    <string name="torch">Licht</string>
+    <string name="take_photo">Foto aufnehmen</string>
+    <string name="camera_open_failed">Kamera konnte nicht geöffnet werden: %1$s</string>
+    <string name="photo_failed">Foto konnte nicht aufgenommen werden: %1$s</string>
+    <string name="photo_unreadable">Foto konnte nicht gelesen werden</string>
+    <string name="qr_aim">Richte die Kamera auf den QR-Code der Karte.</string>
+    <string name="qr_not_ours">Dieser QR-Code stammt nicht aus dieser App.</string>
+    <string name="qr_found">Karte gefunden: %1$s</string>
+    <string name="qr_use">Diese Karte verwenden</string>
+
+    <string name="sheet_title">Blatt zum Drucken</string>
+    <string name="sheet_empty">Noch keine Karten. Geh zu Verschlüsseln, verschlüssele ein
+        Passwort und tippe auf \"Zum Blatt hinzufügen und weiter\". %1$d passen auf ein
+        Blatt, in 4 Spalten.</string>
+    <string name="sheet_memory_warning">Diese Liste existiert nur, solange die App geöffnet
+        ist. Drucke, bevor du sie schließt.</string>
+    <string name="print_button">Drucken oder als PDF speichern</string>
+    <string name="clear_sheet">Blatt leeren</string>
+    <string name="confirm_clear_title">Blatt leeren?</string>
+    <string name="confirm_clear_text">Die %1$d Karten werden verworfen. Es gibt nirgends eine
+        Kopie: wenn du sie nicht gedruckt hast, sind sie weg.</string>
+    <string name="remove">Entfernen</string>
+    <string name="sheet_page">Blatt %1$d</string>
+    <string name="layout_title">Karten pro Blatt</string>
+    <string name="layout_columns">Spalten: %1$d</string>
+    <string name="layout_rows">Zeilen: %1$d</string>
+    <string name="layout_summary">%1$d pro Blatt · Karte %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">Der QR-Code sinkt auf %1$s mm und lässt sich womöglich
+        schwer scannen. Unter etwa %2$s mm fällt die Zuverlässigkeit ab — nimm weniger Karten
+        pro Blatt.</string>
+
+    <plurals name="card_count">
+        <item quantity="one">%1$d Karte</item>
+        <item quantity="other">%1$d Karten</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="one">%1$d A4-Blatt</item>
+        <item quantity="other">%1$d A4-Blätter</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="one">%1$d Karte auf dem Blatt, wartet auf den Druck.</item>
+        <item quantity="other">%1$d Karten auf dem Blatt, warten auf den Druck.</item>
+    </plurals>
+
+    <string name="print_header_title">PaperCript — verschlüsselte Codes</string>
+    <string name="print_header_warning">Ohne das Hauptpasswort sind diese Karten wertlos.
+        Schreib es nicht hierher.</string>
+</resources>

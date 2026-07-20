@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Languages the app offers in system Settings (Android 13+), so PaperCript can
+    be pinned to one without changing the whole phone. The first is the fallback
+    when the system runs in any other language.
+
+    Adding a language is two steps: create values-xx/strings.xml and a line here.
+-->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="en" />
+    <locale android:name="es" />
+    <locale android:name="fr" />
+    <locale android:name="de" />
+    <locale android:name="it" />
+    <locale android:name="pt" />
+    <locale android:name="ca" />
+    <locale android:name="gl" />
+    <locale android:name="eu" />
+    <locale android:name="zh-CN" />
+    <locale android:name="ja" />
+</locale-config>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaperCript</string>
+
+    <string name="tab_encrypt">Cifrar</string>
+    <string name="tab_decrypt">Descifrar</string>
+    <string name="tab_sheet">Folla</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="copy">Copiar</string>
+    <string name="show">Amosar</string>
+    <string name="hide">Agochar</string>
+    <string name="grant_camera">Dar permiso de cámara</string>
+    <string name="deriving_key">Derivando a chave…</string>
+    <string name="no_label">(sen etiqueta)</string>
+
+    <string name="encrypt_title">Cifrar</string>
+    <string name="encrypt_intro">Xera o código que vai na tarxeta. A etiqueta só é unha nota
+        para que distingas as túas tarxetas.</string>
+    <string name="label_field">Etiqueta (p. ex. Gmail do traballo)</string>
+    <string name="label_field_help">Só serve para que recoñezas a tarxeta. Non afecta ao
+        cifrado e podes cambiala máis adiante.</string>
+    <string name="password_field">Contrasinal a gardar</string>
+    <string name="scan_password_button">Ler o contrasinal coa cámara</string>
+    <string name="generate">Xerar</string>
+    <string name="generator_length">Lonxitude: %1$d</string>
+    <string name="generator_symbols">Símbolos</string>
+    <string name="generator_entropy">≈ %1$d bits de entropía</string>
+    <string name="master_field">Chave mestra</string>
+    <string name="master_help">Non se garda en ningures. Se a esqueces, non hai
+        recuperación.</string>
+    <string name="encrypt_button">Cifrar</string>
+    <string name="encrypted_code">✓ Cifrada — lista para a folla</string>
+    <string name="error_encrypt_failed">Non se puido cifrar: %1$s</string>
+    <string name="code_footer">%1$d caracteres. Non hai I, L, O nin U: se cres ver unha, é
+        1, 1, 0 ou V.</string>
+    <string name="add_to_sheet">Engadir á folla e seguinte</string>
+    <string name="handwrite_note">Tamén o podes copiar a man. Se o fas, comproba o escrito
+        descifrándoo antes de tirar o orixinal.</string>
+    <string name="capture_hint_password">Encadra o contrasinal dentro do recadro. Funciona
+        con texto impreso; con letra manuscrita non contes con iso.</string>
+    <string name="nothing_read">Non se leu nada. Proba con máis luz.</string>
+    <string name="pick_password_title">Cal é o contrasinal?</string>
+    <string name="pick_password_help">Toca a liña correcta. Compróbaa: o OCR confunde
+        caracteres semellantes.</string>
+
+    <string name="decrypt_title">Descifrar</string>
+    <string name="scan_qr_button">Escanear o QR da tarxeta</string>
+    <string name="read_from_qr">Lido do QR. Só falta a chave mestra.</string>
+    <string name="card_named">Tarxeta: %1$s</string>
+    <string name="looks_incomplete">Parece incompleto: faltan caracteres.</string>
+    <string name="decrypt_button">Descifrar</string>
+    <string name="password_result">Contrasinal</string>
+    <string name="clipboard_cleared">Bórrase %1$d s despois de copialo, ou ao volver á
+        aplicación — Android non permite que ningunha aplicación toque o portapapeis en
+        segundo plano.</string>
+    <string name="clipboard_clear_now">Borrar agora</string>
+
+    <string name="error_bad_key">Non cadra. Ou a chave mestra non é esa, ou hai algún
+        carácter mal lido. Repasa as caixas contra o papel.</string>
+    <string name="error_empty_master">A chave mestra está baleira.</string>
+    <string name="error_invalid_character">Carácter non válido: %1$s</string>
+    <string name="error_too_short">O código é demasiado curto.</string>
+    <string name="error_unsupported_version">Esta tarxeta ten un formato que esta versión da
+        aplicación xa non le (%1$s).</string>
+
+    <string name="entry_status">%1$d caracteres · posición %2$d</string>
+    <string name="backspace">Borrar</string>
+    <string name="clear">Baleirar</string>
+
+    <string name="torch">Lanterna</string>
+    <string name="take_photo">Sacar foto</string>
+    <string name="camera_open_failed">Non se puido abrir a cámara: %1$s</string>
+    <string name="photo_failed">Non se puido sacar a foto: %1$s</string>
+    <string name="photo_unreadable">Non se puido ler a foto</string>
+    <string name="qr_aim">Apunta ao QR da tarxeta.</string>
+    <string name="qr_not_ours">Ese QR non é desta aplicación.</string>
+    <string name="qr_found">Tarxeta atopada: %1$s</string>
+    <string name="qr_use">Usar esta tarxeta</string>
+
+    <string name="sheet_title">Folla para imprimir</string>
+    <string name="sheet_empty">Aínda non hai tarxetas. Vai a Cifrar, cifra un contrasinal e
+        preme \"Engadir á folla e seguinte\". Caben %1$d por folla, en 4 columnas.</string>
+    <string name="sheet_memory_warning">Esta lista só existe mentres a aplicación estea
+        aberta. Imprime antes de pechala.</string>
+    <string name="print_button">Imprimir ou gardar en PDF</string>
+    <string name="clear_sheet">Baleirar a folla</string>
+    <string name="confirm_clear_title">Baleirar a folla?</string>
+    <string name="confirm_clear_text">Descártanse as %1$d tarxetas. Non hai copia en
+        ningures: se non as imprimiches, pérdelas.</string>
+    <string name="remove">Quitar</string>
+    <string name="sheet_page">Folla %1$d</string>
+    <string name="layout_title">Tarxetas por folla</string>
+    <string name="layout_columns">Columnas: %1$d</string>
+    <string name="layout_rows">Filas: %1$d</string>
+    <string name="layout_summary">%1$d por folla · tarxeta %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">O QR queda en %1$s mm e pode custar escanealo. Por debaixo
+        duns %2$s mm a fiabilidade cae — pon menos tarxetas por folla.</string>
+
+    <plurals name="card_count">
+        <item quantity="one">%1$d tarxeta</item>
+        <item quantity="other">%1$d tarxetas</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="one">%1$d folla A4</item>
+        <item quantity="other">%1$d follas A4</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="one">%1$d tarxeta na folla, pendente de imprimir.</item>
+        <item quantity="other">%1$d tarxetas na folla, pendentes de imprimir.</item>
+    </plurals>
+
+    <string name="print_header_title">PaperCript — códigos cifrados</string>
+    <string name="print_header_warning">Sen a chave mestra estas tarxetas non valen nada. Non
+        a apuntes aquí.</string>
+</resources>

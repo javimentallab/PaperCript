@@ -9,7 +9,7 @@ camerax = "1.4.1"
 mlkitText = "16.0.1"
 mlkitBarcode = "17.3.0"
 zxing = "3.5.3"
-bouncycastle = "1.79"
+bouncycastle = "1.85.2"
 accompanistPermissions = "0.36.0"
 
 [libraries]

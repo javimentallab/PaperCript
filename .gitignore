@@ -17,3 +17,6 @@ local.properties
 *.aab
 *.keystore
 *.jks
+
+# Ruta y claves de la firma de release
+keystore.properties

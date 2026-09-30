@@ -1,0 +1,11 @@
+<p>PaperCript guarda tus contraseñas <b>en papel, cifradas</b>.</p>
+<p>Cifras una contraseña con tu contraseña maestra, la app la convierte en una tarjeta con un código QR e imprimes una hoja A4 de tarjetas recortables. Para recuperar una contraseña, escaneas su QR y escribes la contraseña maestra.</p>
+<p>Perder el papel no te cuesta nada: una tarjeta no sirve de nada sin la contraseña maestra. Guárdalas en un cajón, repártelas o deja una copia en casa de alguien de confianza.</p>
+<ul>
+<li>Derivación de clave con scrypt, AES-256 + HMAC-SHA256 (encrypt-then-MAC)</li>
+<li>Sin permiso de red: la app no puede abrir conexiones</li>
+<li>No guarda nada: ni contraseñas, ni la maestra, ni historial</li>
+<li>Sin capturas de pantalla (FLAG_SECURE); el portapapeles se limpia solo</li>
+<li>Generador de contraseñas integrado</li>
+<li>Lectura de QR con ZXing, sin librerías propietarias</li>
+</ul>

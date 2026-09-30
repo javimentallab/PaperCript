@@ -16,7 +16,7 @@ only storage.
 
 ## Using it
 
-**Encrypt** → label, password (typed, generated, or read with the camera) and master
+**Encrypt** → label, password (typed or generated) and master
 password → *Add to sheet and next*. The master password is kept between entries so you can
 chain several in one go.
 
@@ -81,10 +81,11 @@ passphrase (77–90 bits) is what actually moves the needle.
 
 **What the app does:**
 
-- **No network permission.** The APK declares only `CAMERA`; the permissions ML Kit dragged
-  in are stripped with `tools:node="remove"`. Without `INTERNET` the kernel will not let the
-  app open a socket — that is not a promise, it is an inability. The OCR and QR models are
-  bundled and work offline.
+- **No network permission.** The APK declares only `CAMERA`, and `INTERNET` is explicitly
+  stripped with `tools:node="remove"`. Without it the kernel will not let the app open a
+  socket — that is not a promise, it is an inability.
+- **Fully open source.** QR codes are read with [ZXing](https://github.com/zxing/zxing);
+  there are no Google Play Services or other proprietary libraries.
 - `FLAG_SECURE`: no screenshots, no recents thumbnail, no screen recording.
 - The clipboard is flagged as sensitive and cleared 45 s after copying **or when you return
   to the app**, whichever happens while it is in the foreground. There is also a button to

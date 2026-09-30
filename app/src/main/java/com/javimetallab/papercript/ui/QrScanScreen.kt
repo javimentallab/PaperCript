@@ -40,10 +40,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
-import com.google.mlkit.vision.barcode.BarcodeScannerOptions
-import com.google.mlkit.vision.barcode.BarcodeScanning
-import com.google.mlkit.vision.barcode.common.Barcode
-import com.google.mlkit.vision.common.InputImage
+import com.google.zxing.BarcodeFormat
+import com.google.zxing.BinaryBitmap
+import com.google.zxing.DecodeHintType
+import com.google.zxing.NotFoundException
+import com.google.zxing.PlanarYUVLuminanceSource
+import com.google.zxing.common.HybridBinarizer
+import com.google.zxing.multi.qrcode.QRCodeMultiReader
 import com.javimetallab.papercript.R
 import com.javimetallab.papercript.qr.QrCodec
 import java.util.concurrent.Executors
@@ -89,10 +92,10 @@ fun QrScanScreen(
     }
 
     DisposableEffect(Unit) {
-        val scanner = BarcodeScanning.getClient(
-            BarcodeScannerOptions.Builder()
-                .setBarcodeFormats(Barcode.FORMAT_QR_CODE)
-                .build()
+        val reader = QRCodeMultiReader()
+        val hints = mapOf(
+            DecodeHintType.POSSIBLE_FORMATS to listOf(BarcodeFormat.QR_CODE),
+            DecodeHintType.TRY_HARDER to true
         )
 
         // Debounce: the same code must appear in several consecutive frames
@@ -102,47 +105,45 @@ fun QrScanScreen(
         var repeats = 0
 
         val analyzer = ImageAnalysis.Analyzer { proxy: ImageProxy ->
-            val mediaImage = proxy.image
-            if (mediaImage == null) {
+            val texts = try {
+                decodeQrs(proxy, reader, hints)
+            } finally {
                 proxy.close()
-                return@Analyzer
             }
-            val image = InputImage.fromMediaImage(mediaImage, proxy.imageInfo.rotationDegrees)
-            scanner.process(image)
-                .addOnSuccessListener { barcodes ->
-                    val parsed = barcodes
-                        .asSequence()
-                        .mapNotNull { it.rawValue }
-                        .mapNotNull(QrCodec::parse)
-                        .firstOrNull()
 
-                    when {
-                        parsed != null -> {
-                            if (parsed.code == lastSeen) {
-                                repeats++
-                            } else {
-                                lastSeen = parsed.code
-                                repeats = 1
-                            }
-                            if (repeats >= FRAMES_TO_CONFIRM) {
-                                notice = null
-                                candidate = parsed
-                            }
+            val parsed = texts
+                .asSequence()
+                .mapNotNull(QrCodec::parse)
+                .firstOrNull()
+
+            // The analyzer runs on its own thread; state is touched on the main one.
+            ContextCompat.getMainExecutor(context).execute {
+                when {
+                    parsed != null -> {
+                        if (parsed.code == lastSeen) {
+                            repeats++
+                        } else {
+                            lastSeen = parsed.code
+                            repeats = 1
                         }
-
-                        barcodes.isNotEmpty() -> {
-                            lastSeen = null
-                            repeats = 0
-                            notice = context.getString(R.string.qr_not_ours)
-                        }
-
-                        else -> {
-                            lastSeen = null
-                            repeats = 0
+                        if (repeats >= FRAMES_TO_CONFIRM) {
+                            notice = null
+                            candidate = parsed
                         }
                     }
+
+                    texts.isNotEmpty() -> {
+                        lastSeen = null
+                        repeats = 0
+                        notice = context.getString(R.string.qr_not_ours)
+                    }
+
+                    else -> {
+                        lastSeen = null
+                        repeats = 0
+                    }
                 }
-                .addOnCompleteListener { proxy.close() }
+            }
         }
 
         val providerFuture = ProcessCameraProvider.getInstance(context)
@@ -173,7 +174,6 @@ fun QrScanScreen(
 
         onDispose {
             provider?.unbindAll()
-            scanner.close()
             executor.shutdown()
         }
     }
@@ -236,5 +236,37 @@ fun QrScanScreen(
                 Text(stringResource(R.string.cancel), color = Color.White)
             }
         }
+    }
+}
+
+/**
+ * Reads every QR in the frame from its luminance (Y) plane, which is all ZXing
+ * needs. QR finder patterns work at any rotation, so the frame is not rotated.
+ */
+private fun decodeQrs(
+    proxy: ImageProxy,
+    reader: QRCodeMultiReader,
+    hints: Map<DecodeHintType, Any>
+): List<String> {
+    val plane = proxy.planes.firstOrNull() ?: return emptyList()
+    val buffer = plane.buffer.duplicate().apply { rewind() }
+    val bytes = ByteArray(buffer.remaining()).also { buffer.get(it) }
+
+    // Rows can be padded: rowStride is the real width of the buffer.
+    val rowStride = plane.rowStride
+    val dataHeight = bytes.size / rowStride
+    val source = PlanarYUVLuminanceSource(
+        bytes, rowStride, dataHeight,
+        0, 0, proxy.width, minOf(proxy.height, dataHeight),
+        false
+    )
+
+    return try {
+        reader.decodeMultiple(BinaryBitmap(HybridBinarizer(source)), hints)
+            .mapNotNull { it.text }
+    } catch (_: NotFoundException) {
+        emptyList()
+    } finally {
+        reader.reset()
     }
 }

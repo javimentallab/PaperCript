@@ -1,0 +1,1 @@
+Encrypted passwords on printable QR cards. No network, stores nothing.

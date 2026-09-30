@@ -36,10 +36,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- OCR and barcode models bundled in the APK: no network needed. -->
-        <meta-data
-            android:name="com.google.mlkit.vision.DEPENDENCIES"
-            android:value="ocr,barcode" />
     </application>
 </manifest>

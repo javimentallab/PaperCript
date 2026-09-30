@@ -1,21 +1,16 @@
 package com.javimetallab.papercript.ui
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Switch
@@ -35,13 +30,11 @@ import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import com.javimetallab.papercript.R
 import com.javimetallab.papercript.crypto.Base32
 import com.javimetallab.papercript.crypto.PasswordGenerator
 import com.javimetallab.papercript.crypto.SecretCodec
-import com.javimetallab.papercript.ocr.TextExtract
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -49,14 +42,10 @@ import kotlinx.coroutines.withContext
 /**
  * Password + master password -> card code.
  *
- * The password can be typed, generated, or read with the camera. That last one
- * does work well with OCR: what gets scanned here is printed text (a router
- * sticker, a letter from the bank), not handwriting.
+ * The password is typed or generated.
  */
 @Composable
 fun EncryptScreen(
-    hasCameraPermission: Boolean,
-    onRequestCamera: () -> Unit,
     sheetCount: Int,
     onAddToSheet: (label: String, code: String) -> Unit,
     modifier: Modifier = Modifier
@@ -68,15 +57,10 @@ fun EncryptScreen(
     var error by remember { mutableStateOf<String?>(null) }
     var working by remember { mutableStateOf(false) }
 
-    var scanning by remember { mutableStateOf(false) }
-    var candidates by remember { mutableStateOf<List<String>>(emptyList()) }
-    var scanNotice by remember { mutableStateOf<String?>(null) }
-
     var genLength by remember { mutableIntStateOf(PasswordGenerator.DEFAULT_LENGTH) }
     var genSymbols by remember { mutableStateOf(true) }
 
     val scope = rememberCoroutineScope()
-    val nothingRead = stringResource(R.string.nothing_read)
     val encryptFailed = stringResource(R.string.error_encrypt_failed)
 
     // The column is tall (label, password, generator, master password), so the
@@ -96,62 +80,6 @@ fun EncryptScreen(
     fun invalidate() {
         code = null
         error = null
-    }
-
-    if (scanning) {
-        CaptureScreen(
-            hint = stringResource(R.string.capture_hint_password),
-            guideHeightFraction = 0.45f,
-            onResult = { text ->
-                val found = TextExtract.passwordCandidates(text)
-                candidates = found
-                scanNotice = if (found.isEmpty()) nothingRead else null
-                scanning = false
-            },
-            onCancel = { scanning = false },
-            modifier = modifier
-        )
-        return
-    }
-
-    if (candidates.isNotEmpty()) {
-        AlertDialog(
-            onDismissRequest = { candidates = emptyList() },
-            title = { Text(stringResource(R.string.pick_password_title)) },
-            text = {
-                Column(
-                    Modifier
-                        .heightIn(max = 360.dp)
-                        .verticalScroll(rememberScrollState()),
-                    verticalArrangement = Arrangement.spacedBy(4.dp)
-                ) {
-                    Text(
-                        stringResource(R.string.pick_password_help),
-                        style = MaterialTheme.typography.bodySmall
-                    )
-                    HorizontalDivider(Modifier.padding(vertical = 4.dp))
-                    candidates.forEach { candidate ->
-                        Text(
-                            text = candidate,
-                            fontFamily = FontFamily.Monospace,
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .clickable {
-                                    password = candidate
-                                    candidates = emptyList()
-                                    invalidate()
-                                }
-                                .padding(vertical = 10.dp)
-                        )
-                    }
-                }
-            },
-            confirmButton = {
-                TextButton(onClick = { candidates = emptyList() }) {
-                    Text(stringResource(R.string.cancel))
-                }
-            }
-        )
     }
 
     Column(
@@ -178,20 +106,6 @@ fun EncryptScreen(
             onValueChange = { password = it; invalidate() },
             label = stringResource(R.string.password_field)
         )
-
-        OutlinedButton(
-            onClick = { if (hasCameraPermission) scanning = true else onRequestCamera() },
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text(
-                if (hasCameraPermission) stringResource(R.string.scan_password_button)
-                else stringResource(R.string.grant_camera)
-            )
-        }
-
-        scanNotice?.let {
-            Text(it, style = MaterialTheme.typography.bodySmall)
-        }
 
         // Generator. No characters are barred for legibility: the password is
         // never transcribed by hand, it travels encrypted inside the QR.
@@ -299,7 +213,6 @@ fun EncryptScreen(
                     label = ""
                     password = ""
                     code = null
-                    scanNotice = null
                 },
                 modifier = Modifier.fillMaxWidth()
             ) {

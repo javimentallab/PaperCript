@@ -24,7 +24,6 @@
     <string name="label_field">ラベル(例:仕事用 Gmail)</string>
     <string name="label_field_help">カードを見分けるためだけのものです。暗号化には影響せず、後から変更できます。</string>
     <string name="password_field">保存するパスワード</string>
-    <string name="scan_password_button">カメラでパスワードを読み取る</string>
     <string name="generate">生成</string>
     <string name="generator_length">長さ:%1$d</string>
     <string name="generator_symbols">記号</string>
@@ -37,10 +36,6 @@
     <string name="code_footer">%1$d 文字。I、L、O、U は使いません。そう見えても 1、1、0、V です。</string>
     <string name="add_to_sheet">用紙に追加して次へ</string>
     <string name="handwrite_note">手書きで写すこともできます。その場合は、元のパスワードを捨てる前に復号して書き写した内容を確認してください。</string>
-    <string name="capture_hint_password">枠内にパスワードを収めてください。印刷された文字なら読めますが、手書きはあてになりません。</string>
-    <string name="nothing_read">何も読み取れませんでした。明るい場所で試してください。</string>
-    <string name="pick_password_title">どれがパスワードですか?</string>
-    <string name="pick_password_help">正しい行をタップしてください。文字認識は似た文字を取り違えるので、必ず確認を。</string>
 
     <string name="decrypt_title">復号</string>
     <string name="scan_qr_button">カードの QR をスキャン</string>
@@ -62,11 +57,7 @@
     <string name="backspace">削除</string>
     <string name="clear">クリア</string>
 
-    <string name="torch">ライト</string>
-    <string name="take_photo">撮影</string>
     <string name="camera_open_failed">カメラを開けませんでした:%1$s</string>
-    <string name="photo_failed">撮影できませんでした:%1$s</string>
-    <string name="photo_unreadable">写真を読み取れませんでした</string>
     <string name="qr_aim">カードの QR に向けてください。</string>
     <string name="qr_not_ours">この QR はこのアプリのものではありません。</string>
     <string name="qr_found">カードを検出:%1$s</string>

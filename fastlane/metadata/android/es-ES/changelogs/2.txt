@@ -1,0 +1,3 @@
+- El escáner de QR usa ZXing en lugar de Google ML Kit: ya no queda ninguna librería propietaria.
+- Quitada la lectura de contraseñas desde una foto (OCR).
+- Formato de tarjeta y cifrado sin cambios: las tarjetas ya impresas siguen funcionando.

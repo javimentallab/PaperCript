@@ -21,7 +21,6 @@
     <string name="label_field_help">Serve solo a riconoscere la tessera. Non influisce sulla
         cifratura e puoi cambiarla in seguito.</string>
     <string name="password_field">Password da conservare</string>
-    <string name="scan_password_button">Leggi la password con la fotocamera</string>
     <string name="generate">Genera</string>
     <string name="generator_length">Lunghezza: %1$d</string>
     <string name="generator_symbols">Simboli</string>
@@ -37,12 +36,6 @@
     <string name="add_to_sheet">Aggiungi al foglio e continua</string>
     <string name="handwrite_note">Puoi anche ricopiarlo a mano. In tal caso, verifica quanto
         scritto decifrandolo prima di buttare l\'originale.</string>
-    <string name="capture_hint_password">Inquadra la password nel riquadro. Funziona con
-        testo stampato; sulla scrittura a mano non farci conto.</string>
-    <string name="nothing_read">Non è stato letto nulla. Riprova con più luce.</string>
-    <string name="pick_password_title">Qual è la password?</string>
-    <string name="pick_password_help">Tocca la riga giusta. Controllala: l\'OCR confonde i
-        caratteri simili.</string>
 
     <string name="decrypt_title">Decifra</string>
     <string name="scan_qr_button">Scansiona il QR della tessera</string>
@@ -68,11 +61,7 @@
     <string name="backspace">Cancella</string>
     <string name="clear">Svuota</string>
 
-    <string name="torch">Torcia</string>
-    <string name="take_photo">Scatta foto</string>
     <string name="camera_open_failed">Impossibile aprire la fotocamera: %1$s</string>
-    <string name="photo_failed">Impossibile scattare la foto: %1$s</string>
-    <string name="photo_unreadable">Impossibile leggere la foto</string>
     <string name="qr_aim">Inquadra il QR della tessera.</string>
     <string name="qr_not_ours">Questo QR non è di questa app.</string>
     <string name="qr_found">Tessera trovata: %1$s</string>

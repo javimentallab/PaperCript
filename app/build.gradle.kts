@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -12,12 +14,30 @@ android {
         applicationId = "com.javimetallab.papercript"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
+    }
+
+    // The release key lives outside the repo; keystore.properties (gitignored)
+    // points at it. Without that file, release builds come out unsigned.
+    val keystoreProps = rootProject.file("keystore.properties")
+        .takeIf { it.exists() }
+        ?.let { file -> Properties().apply { file.inputStream().use(::load) } }
+
+    signingConfigs {
+        if (keystoreProps != null) {
+            create("release") {
+                storeFile = file(keystoreProps.getProperty("storeFile"))
+                storePassword = keystoreProps.getProperty("storePassword")
+                keyAlias = keystoreProps.getProperty("keyAlias")
+                keyPassword = keystoreProps.getProperty("keyPassword")
+            }
+        }
     }
 
     buildTypes {
         release {
+            signingConfig = signingConfigs.findByName("release")
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
@@ -36,6 +56,12 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+    // No encrypted dependency blob in the APK: F-Droid repos reject it, and it
+    // is only readable by Google Play anyway.
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
     }
     packaging {
         resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -62,8 +88,6 @@ dependencies {
     implementation(libs.camera.lifecycle)
     implementation(libs.camera.view)
 
-    implementation(libs.mlkit.text.recognition)
-    implementation(libs.mlkit.barcode.scanning)
     implementation(libs.zxing.core)
     implementation(libs.bouncycastle)
 

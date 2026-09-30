@@ -21,7 +21,6 @@
     <string name="label_field_help">Só serve para que recoñezas a tarxeta. Non afecta ao
         cifrado e podes cambiala máis adiante.</string>
     <string name="password_field">Contrasinal a gardar</string>
-    <string name="scan_password_button">Ler o contrasinal coa cámara</string>
     <string name="generate">Xerar</string>
     <string name="generator_length">Lonxitude: %1$d</string>
     <string name="generator_symbols">Símbolos</string>
@@ -37,12 +36,6 @@
     <string name="add_to_sheet">Engadir á folla e seguinte</string>
     <string name="handwrite_note">Tamén o podes copiar a man. Se o fas, comproba o escrito
         descifrándoo antes de tirar o orixinal.</string>
-    <string name="capture_hint_password">Encadra o contrasinal dentro do recadro. Funciona
-        con texto impreso; con letra manuscrita non contes con iso.</string>
-    <string name="nothing_read">Non se leu nada. Proba con máis luz.</string>
-    <string name="pick_password_title">Cal é o contrasinal?</string>
-    <string name="pick_password_help">Toca a liña correcta. Compróbaa: o OCR confunde
-        caracteres semellantes.</string>
 
     <string name="decrypt_title">Descifrar</string>
     <string name="scan_qr_button">Escanear o QR da tarxeta</string>
@@ -68,11 +61,7 @@
     <string name="backspace">Borrar</string>
     <string name="clear">Baleirar</string>
 
-    <string name="torch">Lanterna</string>
-    <string name="take_photo">Sacar foto</string>
     <string name="camera_open_failed">Non se puido abrir a cámara: %1$s</string>
-    <string name="photo_failed">Non se puido sacar a foto: %1$s</string>
-    <string name="photo_unreadable">Non se puido ler a foto</string>
     <string name="qr_aim">Apunta ao QR da tarxeta.</string>
     <string name="qr_not_ours">Ese QR non é desta aplicación.</string>
     <string name="qr_found">Tarxeta atopada: %1$s</string>

@@ -1,0 +1,1 @@
+Contraseñas cifradas en tarjetas QR imprimibles. Sin red, no guarda nada.

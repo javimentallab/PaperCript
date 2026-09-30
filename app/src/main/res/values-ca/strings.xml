@@ -21,7 +21,6 @@
     <string name="label_field_help">Només serveix perquè reconeguis la targeta. No afecta el
         xifratge i la pots canviar més endavant.</string>
     <string name="password_field">Contrasenya a desar</string>
-    <string name="scan_password_button">Llegeix la contrasenya amb la càmera</string>
     <string name="generate">Genera</string>
     <string name="generator_length">Longitud: %1$d</string>
     <string name="generator_symbols">Símbols</string>
@@ -36,12 +35,6 @@
     <string name="add_to_sheet">Afegeix al full i següent</string>
     <string name="handwrite_note">També la pots copiar a mà. Si ho fas, comprova el que has
         escrit desxifrant-ho abans de llençar l\'original.</string>
-    <string name="capture_hint_password">Enquadra la contrasenya dins el requadre. Funciona
-        amb text imprès; amb lletra manuscrita no hi comptis.</string>
-    <string name="nothing_read">No s\'ha llegit res. Prova-ho amb més llum.</string>
-    <string name="pick_password_title">Quina és la contrasenya?</string>
-    <string name="pick_password_help">Toca la línia correcta. Comprova-la: l\'OCR confon
-        caràcters semblants.</string>
 
     <string name="decrypt_title">Desxifrar</string>
     <string name="scan_qr_button">Escaneja el QR de la targeta</string>
@@ -67,11 +60,7 @@
     <string name="backspace">Esborra</string>
     <string name="clear">Buida</string>
 
-    <string name="torch">Llanterna</string>
-    <string name="take_photo">Fes una foto</string>
     <string name="camera_open_failed">No s\'ha pogut obrir la càmera: %1$s</string>
-    <string name="photo_failed">No s\'ha pogut fer la foto: %1$s</string>
-    <string name="photo_unreadable">No s\'ha pogut llegir la foto</string>
     <string name="qr_aim">Apunta al QR de la targeta.</string>
     <string name="qr_not_ours">Aquest QR no és d\'aquesta aplicació.</string>
     <string name="qr_found">Targeta trobada: %1$s</string>

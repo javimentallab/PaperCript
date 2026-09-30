@@ -1,0 +1,3 @@
+- QR scanning now uses ZXing instead of Google ML Kit: no proprietary libraries left.
+- Removed reading a password from a photo (OCR).
+- Card format and encryption unchanged: existing printed cards keep working.

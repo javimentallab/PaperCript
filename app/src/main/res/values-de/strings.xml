@@ -21,7 +21,6 @@
     <string name="label_field_help">Dient nur dazu, die Karte wiederzuerkennen. Sie
         beeinflusst die Verschlüsselung nicht und lässt sich später ändern.</string>
     <string name="password_field">Zu speicherndes Passwort</string>
-    <string name="scan_password_button">Passwort mit der Kamera einlesen</string>
     <string name="generate">Erzeugen</string>
     <string name="generator_length">Länge: %1$d</string>
     <string name="generator_symbols">Sonderzeichen</string>
@@ -37,12 +36,6 @@
     <string name="add_to_sheet">Zum Blatt hinzufügen und weiter</string>
     <string name="handwrite_note">Du kannst ihn auch von Hand abschreiben. Prüfe dann das
         Geschriebene durch Entschlüsseln, bevor du das Original wegwirfst.</string>
-    <string name="capture_hint_password">Richte das Passwort im Rahmen aus. Funktioniert mit
-        gedrucktem Text; bei Handschrift verlass dich nicht darauf.</string>
-    <string name="nothing_read">Nichts erkannt. Versuch es mit mehr Licht.</string>
-    <string name="pick_password_title">Welches ist das Passwort?</string>
-    <string name="pick_password_help">Tippe die richtige Zeile an. Prüfe sie: die
-        Texterkennung verwechselt ähnliche Zeichen.</string>
 
     <string name="decrypt_title">Entschlüsseln</string>
     <string name="scan_qr_button">QR-Code der Karte scannen</string>
@@ -69,11 +62,7 @@
     <string name="backspace">Löschen</string>
     <string name="clear">Leeren</string>
 
-    <string name="torch">Licht</string>
-    <string name="take_photo">Foto aufnehmen</string>
     <string name="camera_open_failed">Kamera konnte nicht geöffnet werden: %1$s</string>
-    <string name="photo_failed">Foto konnte nicht aufgenommen werden: %1$s</string>
-    <string name="photo_unreadable">Foto konnte nicht gelesen werden</string>
     <string name="qr_aim">Richte die Kamera auf den QR-Code der Karte.</string>
     <string name="qr_not_ours">Dieser QR-Code stammt nicht aus dieser App.</string>
     <string name="qr_found">Karte gefunden: %1$s</string>

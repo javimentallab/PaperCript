@@ -24,7 +24,6 @@
     <string name="label_field_help">Solo para que reconozcas la tarjeta. No afecta al
         cifrado, y puedes cambiarla más adelante.</string>
     <string name="password_field">Contraseña a guardar</string>
-    <string name="scan_password_button">Leer la contraseña con la cámara</string>
     <string name="generate">Generar</string>
     <string name="generator_length">Longitud: %1$d</string>
     <string name="generator_symbols">Símbolos</string>
@@ -41,12 +40,6 @@
     <string name="handwrite_note">También puedes copiarlo a mano a una libreta. Si lo
         haces, comprueba lo escrito descifrándolo antes de tirar la contraseña
         original.</string>
-    <string name="capture_hint_password">Encuadra la contraseña dentro del recuadro.
-        Funciona con texto impreso; con letra a mano no cuentes con ello.</string>
-    <string name="nothing_read">No se ha leído nada. Prueba con más luz.</string>
-    <string name="pick_password_title">¿Cuál es la contraseña?</string>
-    <string name="pick_password_help">Toca la línea correcta. Compruébala: el OCR confunde
-        caracteres parecidos.</string>
 
     <!-- Pantalla de descifrar -->
     <string name="decrypt_title">Descifrar</string>
@@ -75,11 +68,7 @@
     <string name="clear">Vaciar</string>
 
     <!-- Cámara -->
-    <string name="torch">Linterna</string>
-    <string name="take_photo">Hacer foto</string>
     <string name="camera_open_failed">No se ha podido abrir la cámara: %1$s</string>
-    <string name="photo_failed">No se ha podido hacer la foto: %1$s</string>
-    <string name="photo_unreadable">No se ha podido leer la foto</string>
     <string name="qr_aim">Apunta al QR de la tarjeta.</string>
     <string name="qr_not_ours">Ese QR no es de esta app.</string>
     <string name="qr_found">Tarjeta encontrada: %1$s</string>

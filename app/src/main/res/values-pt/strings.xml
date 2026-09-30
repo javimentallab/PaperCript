@@ -21,7 +21,6 @@
     <string name="label_field_help">Serve só para reconheceres o cartão. Não afeta a cifra e
         podes alterá-la mais tarde.</string>
     <string name="password_field">Palavra-passe a guardar</string>
-    <string name="scan_password_button">Ler a palavra-passe com a câmara</string>
     <string name="generate">Gerar</string>
     <string name="generator_length">Comprimento: %1$d</string>
     <string name="generator_symbols">Símbolos</string>
@@ -37,12 +36,6 @@
     <string name="add_to_sheet">Adicionar à folha e seguinte</string>
     <string name="handwrite_note">Também o podes copiar à mão. Se o fizeres, verifica o que
         escreveste decifrando-o antes de deitar fora o original.</string>
-    <string name="capture_hint_password">Enquadra a palavra-passe no retângulo. Funciona com
-        texto impresso; com letra manuscrita não contes com isso.</string>
-    <string name="nothing_read">Não foi lido nada. Tenta com mais luz.</string>
-    <string name="pick_password_title">Qual é a palavra-passe?</string>
-    <string name="pick_password_help">Toca na linha correta. Confirma-a: o OCR confunde
-        caracteres parecidos.</string>
 
     <string name="decrypt_title">Decifrar</string>
     <string name="scan_qr_button">Ler o QR do cartão</string>
@@ -68,11 +61,7 @@
     <string name="backspace">Apagar</string>
     <string name="clear">Limpar</string>
 
-    <string name="torch">Lanterna</string>
-    <string name="take_photo">Tirar foto</string>
     <string name="camera_open_failed">Não foi possível abrir a câmara: %1$s</string>
-    <string name="photo_failed">Não foi possível tirar a foto: %1$s</string>
-    <string name="photo_unreadable">Não foi possível ler a foto</string>
     <string name="qr_aim">Aponta ao QR do cartão.</string>
     <string name="qr_not_ours">Esse QR não é desta aplicação.</string>
     <string name="qr_found">Cartão encontrado: %1$s</string>

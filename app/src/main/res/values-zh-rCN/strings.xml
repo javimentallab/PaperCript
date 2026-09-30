@@ -24,7 +24,6 @@
     <string name="label_field">标签(例如:工作邮箱)</string>
     <string name="label_field_help">仅用于辨认卡片。不影响加密,之后可以修改。</string>
     <string name="password_field">要保存的密码</string>
-    <string name="scan_password_button">用相机读取密码</string>
     <string name="generate">生成</string>
     <string name="generator_length">长度:%1$d</string>
     <string name="generator_symbols">符号</string>
@@ -37,10 +36,6 @@
     <string name="code_footer">%1$d 个字符。不含 I、L、O 和 U:看起来像的话,其实是 1、1、0 或 V。</string>
     <string name="add_to_sheet">加入纸张并继续</string>
     <string name="handwrite_note">你也可以手抄。若手抄,请在丢弃原件前先解密核对所写内容。</string>
-    <string name="capture_hint_password">将密码对准取景框。适用于印刷文字;手写字迹不要指望。</string>
-    <string name="nothing_read">未读取到内容。请在光线更充足处重试。</string>
-    <string name="pick_password_title">哪一个是密码?</string>
-    <string name="pick_password_help">点选正确的一行。请核对:文字识别会混淆相似字符。</string>
 
     <string name="decrypt_title">解密</string>
     <string name="scan_qr_button">扫描卡片二维码</string>
@@ -62,11 +57,7 @@
     <string name="backspace">删除</string>
     <string name="clear">清空</string>
 
-    <string name="torch">闪光灯</string>
-    <string name="take_photo">拍照</string>
     <string name="camera_open_failed">无法打开相机:%1$s</string>
-    <string name="photo_failed">无法拍照:%1$s</string>
-    <string name="photo_unreadable">无法读取照片</string>
     <string name="qr_aim">对准卡片上的二维码。</string>
     <string name="qr_not_ours">该二维码不属于本应用。</string>
     <string name="qr_found">找到卡片:%1$s</string>

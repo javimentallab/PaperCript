@@ -21,7 +21,6 @@
     <string name="label_field_help">Sert uniquement à reconnaître la carte. N\'affecte pas le
         chiffrement, et vous pouvez le modifier plus tard.</string>
     <string name="password_field">Mot de passe à enregistrer</string>
-    <string name="scan_password_button">Lire le mot de passe avec l\'appareil photo</string>
     <string name="generate">Générer</string>
     <string name="generator_length">Longueur : %1$d</string>
     <string name="generator_symbols">Symboles</string>
@@ -37,12 +36,6 @@
     <string name="add_to_sheet">Ajouter à la feuille et continuer</string>
     <string name="handwrite_note">Vous pouvez aussi le recopier à la main. Dans ce cas,
         vérifiez ce que vous avez écrit en le déchiffrant avant de jeter l\'original.</string>
-    <string name="capture_hint_password">Cadrez le mot de passe dans le rectangle. Fonctionne
-        avec du texte imprimé ; n\'y comptez pas pour de l\'écriture manuscrite.</string>
-    <string name="nothing_read">Rien n\'a été lu. Réessayez avec plus de lumière.</string>
-    <string name="pick_password_title">Lequel est le mot de passe ?</string>
-    <string name="pick_password_help">Touchez la bonne ligne. Vérifiez-la : l\'OCR confond
-        les caractères similaires.</string>
 
     <string name="decrypt_title">Déchiffrer</string>
     <string name="scan_qr_button">Scanner le QR de la carte</string>
@@ -69,11 +62,7 @@
     <string name="backspace">Effacer</string>
     <string name="clear">Vider</string>
 
-    <string name="torch">Lampe</string>
-    <string name="take_photo">Prendre une photo</string>
     <string name="camera_open_failed">Impossible d\'ouvrir l\'appareil photo : %1$s</string>
-    <string name="photo_failed">Impossible de prendre la photo : %1$s</string>
-    <string name="photo_unreadable">Impossible de lire la photo</string>
     <string name="qr_aim">Visez le QR de la carte.</string>
     <string name="qr_not_ours">Ce QR ne provient pas de cette application.</string>
     <string name="qr_found">Carte trouvée : %1$s</string>

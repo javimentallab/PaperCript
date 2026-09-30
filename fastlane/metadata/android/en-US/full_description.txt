@@ -1,0 +1,11 @@
+<p>PaperCript stores your passwords <b>on paper, encrypted</b>.</p>
+<p>You encrypt a password with your master password, the app turns it into a card with a QR code, and you print an A4 sheet of cut-out cards. To get a password back, you scan its QR and type the master password.</p>
+<p>Losing the paper costs you nothing: a card is worthless without the master password. Keep them in a drawer, split them up, or leave a copy at a friend's place.</p>
+<ul>
+<li>scrypt key derivation, AES-256 + HMAC-SHA256 (encrypt-then-MAC)</li>
+<li>No network permission: the app cannot open a socket</li>
+<li>Stores nothing: no passwords, no master password, no history</li>
+<li>No screenshots (FLAG_SECURE), sensitive clipboard cleared automatically</li>
+<li>Built-in password generator</li>
+<li>QR codes read with ZXing, no proprietary libraries</li>
+</ul>

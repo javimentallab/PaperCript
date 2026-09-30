@@ -25,7 +25,6 @@
     <string name="label_field_help">Only so you recognise the card. It does not affect
         encryption, and you can change it later.</string>
     <string name="password_field">Password to store</string>
-    <string name="scan_password_button">Read the password with the camera</string>
     <string name="generate">Generate</string>
     <string name="generator_length">Length: %1$d</string>
     <string name="generator_symbols">Symbols</string>
@@ -41,12 +40,6 @@
     <string name="add_to_sheet">Add to sheet and next</string>
     <string name="handwrite_note">You can also copy it into a notebook by hand. If you do,
         check what you wrote by decrypting it before throwing the original away.</string>
-    <string name="capture_hint_password">Frame the password inside the box. Works with
-        printed text; do not count on it for handwriting.</string>
-    <string name="nothing_read">Nothing was read. Try again with more light.</string>
-    <string name="pick_password_title">Which one is the password?</string>
-    <string name="pick_password_help">Tap the right line. Check it: OCR confuses similar
-        characters.</string>
 
     <!-- Decrypt screen -->
     <string name="decrypt_title">Decrypt</string>
@@ -76,11 +69,7 @@
     <string name="clear">Clear</string>
 
     <!-- Camera -->
-    <string name="torch">Torch</string>
-    <string name="take_photo">Take photo</string>
     <string name="camera_open_failed">Could not open the camera: %1$s</string>
-    <string name="photo_failed">Could not take the photo: %1$s</string>
-    <string name="photo_unreadable">Could not read the photo</string>
     <string name="qr_aim">Point at the QR on the card.</string>
     <string name="qr_not_ours">That QR is not from this app.</string>
     <string name="qr_found">Card found: %1$s</string>

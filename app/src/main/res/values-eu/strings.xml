@@ -21,7 +21,6 @@
     <string name="label_field_help">Txartela ezagutzeko baino ez da. Ez du zifratzean
         eraginik, eta gerora alda dezakezu.</string>
     <string name="password_field">Gordeko den pasahitza</string>
-    <string name="scan_password_button">Irakurri pasahitza kamerarekin</string>
     <string name="generate">Sortu</string>
     <string name="generator_length">Luzera: %1$d</string>
     <string name="generator_symbols">Ikurrak</string>
@@ -36,12 +35,6 @@
     <string name="add_to_sheet">Gehitu orrira eta hurrengoa</string>
     <string name="handwrite_note">Eskuz ere kopia dezakezu. Hala eginez gero, egiaztatu
         idatzitakoa deszifratuz jatorrizkoa bota aurretik.</string>
-    <string name="capture_hint_password">Enkoadratu pasahitza laukian. Testu inprimatuarekin
-        funtzionatzen du; eskuzko idazkerarekin ez fidatu.</string>
-    <string name="nothing_read">Ez da ezer irakurri. Saiatu argi gehiagorekin.</string>
-    <string name="pick_password_title">Zein da pasahitza?</string>
-    <string name="pick_password_help">Ukitu lerro egokia. Egiaztatu ezazu: OCRak antzeko
-        karaktereak nahasten ditu.</string>
 
     <string name="decrypt_title">Deszifratu</string>
     <string name="scan_qr_button">Eskaneatu txartelaren QRa</string>
@@ -67,11 +60,7 @@
     <string name="backspace">Ezabatu</string>
     <string name="clear">Hustu</string>
 
-    <string name="torch">Linterna</string>
-    <string name="take_photo">Atera argazkia</string>
     <string name="camera_open_failed">Ezin izan da kamera ireki: %1$s</string>
-    <string name="photo_failed">Ezin izan da argazkia atera: %1$s</string>
-    <string name="photo_unreadable">Ezin izan da argazkia irakurri</string>
     <string name="qr_aim">Apuntatu txartelaren QRari.</string>
     <string name="qr_not_ours">QR hori ez da aplikazio honetakoa.</string>
     <string name="qr_found">Txartela aurkitu da: %1$s</string>

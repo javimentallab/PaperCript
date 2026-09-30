@@ -126,8 +126,6 @@ private fun PaperCriptApp(
             // written to the phone: closing it leaves no trace.
             when (tab) {
                 0 -> EncryptScreen(
-                    hasCameraPermission = hasCameraPermission,
-                    onRequestCamera = onRequestCamera,
                     sheetCount = sheet.entries.size,
                     onAddToSheet = { label, code ->
                         sheet.add(SheetEntry(label = label, code = code))

@@ -1,0 +1,3 @@
+- Store listing now has an icon and screenshots.
+- Release APK is built reproducibly, so F-Droid can verify it against the source.
+- No changes to the app itself.

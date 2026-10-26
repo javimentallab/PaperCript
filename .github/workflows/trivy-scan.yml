@@ -1,0 +1,54 @@
+name: trivy-scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Weekly Monday 04:30 UTC — catches new advisories against unchanged code.
+    - cron: '30 4 * * 1'
+  workflow_dispatch:
+
+jobs:
+  scan:
+    name: Trivy repo scan (deps + secrets + misconfig)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Trivy — fail on HIGH/CRITICAL
+        # Pinned to the commit behind v0.36.0 (tags of this action were
+        # hijacked in March 2026).
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          format: table
+          severity: HIGH,CRITICAL
+          exit-code: '1'
+          ignore-unfixed: true
+          scanners: vuln,secret
+          timeout: 10m
+
+      - name: Trivy — SARIF (vulns, secrets, misconfig)
+        if: always()
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          format: sarif
+          output: trivy-results.sarif
+          severity: MEDIUM,HIGH,CRITICAL
+          scanners: vuln,secret,misconfig
+          timeout: 10m
+
+      - name: Push SARIF to GitHub Security tab
+        if: always()
+        uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: trivy-results.sarif
+          category: trivy-fs

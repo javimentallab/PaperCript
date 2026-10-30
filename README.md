@@ -12,6 +12,14 @@ master password. Keep them in a drawer, split them up, or leave a copy at a frie
 The app stores nothing — no passwords, no master password, no history. The paper is the
 only storage.
 
+## Install
+
+- **[F-Droid](https://f-droid.org/packages/com.javimetallab.papercript/)** — search for *PaperCript* in
+  the F-Droid app (or Droid-ify, Neo Store…); it keeps the app updated.
+- **APK** from the [latest release](https://github.com/javimentallab/PaperCript/releases/latest).
+  F-Droid builds it reproducibly and ships this same signed APK, so you can switch
+  between both sources and keep updating.
+
 ---
 
 ## Using it

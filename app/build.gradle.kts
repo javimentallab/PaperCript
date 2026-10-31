@@ -8,14 +8,14 @@ plugins {
 
 android {
     namespace = "com.javimetallab.papercript"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.javimetallab.papercript"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 4
-        versionName = "1.3"
+        targetSdk = 36
+        versionCode = 5
+        versionName = "1.3.1"
     }
 
     // The release key lives outside the repo; keystore.properties (gitignored)

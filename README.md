@@ -1,5 +1,14 @@
 # PaperCript
 
+<p align="center">
+  <img src="fastlane/metadata/android/en-US/images/featureGraphic.png" alt="PaperCript" width="720">
+</p>
+<p align="center">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" alt="Encrypt" width="220">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" alt="Encrypted code" width="220">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" alt="Sheet to print" width="220">
+</p>
+
 Android app that stores your passwords **on paper, encrypted**.
 
 You encrypt a password with your master password, the app turns it into a card with a QR

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_encrypt">암호화</string>
+    <string name="tab_decrypt">복호화</string>
+    <string name="tab_sheet">시트</string>
+    <string name="cancel">취소</string>
+    <string name="copy">복사</string>
+    <string name="show">표시</string>
+    <string name="hide">숨기기</string>
+    <string name="grant_camera">카메라 권한 허용</string>
+    <string name="deriving_key">키 생성 중…</string>
+    <string name="no_label">(라벨 없음)</string>
+    <string name="encrypt_title">암호화</string>
+    <string name="encrypt_intro">카드에 들어갈 코드를 만듭니다. 라벨은 카드를 구별하기 위한 메모일 뿐입니다.</string>
+    <string name="label_field">라벨 (예: 회사 Gmail)</string>
+    <string name="label_field_help">카드를 알아보기 위한 것일 뿐입니다. 암호화에는 영향이 없고 나중에 바꿀 수 있습니다.</string>
+    <string name="password_field">저장할 비밀번호</string>
+    <string name="generate">생성</string>
+    <string name="generator_length">길이: %1$d</string>
+    <string name="generator_symbols">기호</string>
+    <string name="generator_entropy">엔트로피 약 %1$d비트</string>
+    <string name="master_field">마스터 비밀번호</string>
+    <string name="master_help">어디에도 저장되지 않습니다. 잊어버리면 복구할 방법이 없습니다.</string>
+    <string name="encrypt_button">암호화</string>
+    <string name="encrypted_code">✓ 암호화됨 — 시트에 넣을 준비 완료</string>
+    <string name="error_encrypt_failed">암호화할 수 없습니다: %1$s</string>
+    <string name="code_footer">%1$d자. I, L, O, U는 없습니다. 그렇게 보이면 1, 1, 0, V입니다.</string>
+    <string name="add_to_sheet">시트에 추가하고 다음</string>
+    <string name="handwrite_note">공책에 손으로 옮겨 적을 수도 있습니다. 그렇게 했다면 원본을 버리기 전에 복호화해서 적은 내용을 확인하세요.</string>
+    <string name="decrypt_title">복호화</string>
+    <string name="scan_qr_button">카드 QR 스캔</string>
+    <string name="read_from_qr">QR에서 읽었습니다. 마스터 비밀번호만 입력하면 됩니다.</string>
+    <string name="card_named">카드: %1$s</string>
+    <string name="looks_incomplete">불완전해 보입니다: 글자가 빠졌습니다.</string>
+    <string name="decrypt_button">복호화</string>
+    <string name="password_result">비밀번호</string>
+    <string name="clipboard_cleared">복사하고 %1$d초 뒤 또는 앱으로 돌아오면 지워집니다. Android는 앱이 백그라운드에서 클립보드에 손대는 것을 허용하지 않습니다.</string>
+    <string name="clipboard_clear_now">지금 지우기</string>
+    <string name="error_bad_key">맞지 않습니다. 마스터 비밀번호가 틀렸거나 글자를 잘못 읽었습니다. 칸을 종이와 비교해 보세요.</string>
+    <string name="error_empty_master">마스터 비밀번호가 비어 있습니다.</string>
+    <string name="error_invalid_character">잘못된 글자: %1$s</string>
+    <string name="error_too_short">코드가 너무 짧습니다.</string>
+    <string name="error_unsupported_version">이 카드는 이 버전의 앱이 더 이상 읽지 않는 형식을 사용합니다 (%1$s).</string>
+    <string name="entry_status">%1$d자 · 위치 %2$d</string>
+    <string name="backspace">삭제</string>
+    <string name="clear">지우기</string>
+    <string name="camera_open_failed">카메라를 열 수 없습니다: %1$s</string>
+    <string name="qr_aim">카드의 QR을 비추세요.</string>
+    <string name="qr_not_ours">이 앱의 QR이 아닙니다.</string>
+    <string name="qr_found">카드를 찾았습니다: %1$s</string>
+    <string name="qr_use">이 카드 사용</string>
+    <string name="sheet_title">인쇄할 시트</string>
+    <string name="sheet_empty">아직 카드가 없습니다. 암호화로 가서 비밀번호를 암호화하고 ‘시트에 추가하고 다음’을 누르세요. 시트 한 장에 4열로 %1$d개가 들어갑니다.</string>
+    <string name="sheet_memory_warning">이 목록은 앱이 열려 있는 동안에만 존재합니다. 닫기 전에 인쇄하세요.</string>
+    <string name="print_button">인쇄 또는 PDF로 저장</string>
+    <string name="clear_sheet">시트 비우기</string>
+    <string name="confirm_clear_title">시트를 비울까요?</string>
+    <string name="confirm_clear_text">카드 %1$d개가 버려집니다. 어디에도 사본이 없으니 인쇄하지 않았다면 잃게 됩니다.</string>
+    <string name="remove">제거</string>
+    <string name="sheet_page">시트 %1$d</string>
+    <string name="layout_title">시트당 카드 수</string>
+    <string name="layout_columns">열: %1$d</string>
+    <string name="layout_rows">행: %1$d</string>
+    <string name="layout_summary">시트당 %1$d개 · 카드 %2$s × %3$s mm · QR %4$s mm</string>
+    <string name="layout_qr_small">QR이 %1$s mm로 작아져 스캔하기 어려울 수 있습니다. 약 %2$s mm 미만이면 인식률이 떨어지니 시트당 카드 수를 줄이세요.</string>
+    <string name="print_header_title">PaperCript — 암호화된 코드</string>
+    <string name="print_header_warning">마스터 비밀번호 없이는 이 카드들은 쓸모가 없습니다. 여기에 적지 마세요.</string>
+    <plurals name="card_count">
+        <item quantity="other">카드 %1$d장</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="other">A4 시트 %1$d장</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="other">인쇄를 기다리는 카드 %1$d장이 시트에 있습니다.</item>
+    </plurals>
+</resources>

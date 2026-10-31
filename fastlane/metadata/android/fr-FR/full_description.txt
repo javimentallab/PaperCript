@@ -1,0 +1,12 @@
+<p>PaperCript conserve vos mots de passe <b>sur papier, chiffrés</b>.</p>
+<p>Vous chiffrez un mot de passe avec votre mot de passe maître, l'application le transforme en carte avec un code QR, et vous imprimez une feuille A4 de cartes à découper. Pour retrouver un mot de passe, vous scannez son QR et tapez le mot de passe maître.</p>
+<p>Perdre le papier ne vous coûte rien : une carte ne vaut rien sans le mot de passe maître. Rangez-les dans un tiroir, répartissez-les ou laissez une copie chez quelqu'un de confiance.</p>
+<ul>
+<li>Dérivation de clé scrypt, AES-256 + HMAC-SHA256 (chiffrer puis authentifier)</li>
+<li>Aucune permission réseau : l'application ne peut ouvrir aucune connexion</li>
+<li>N'enregistre rien : ni mots de passe, ni mot de passe maître, ni historique</li>
+<li>Pas de captures d'écran (FLAG_SECURE), presse-papiers sensible effacé automatiquement</li>
+<li>Générateur de mots de passe intégré</li>
+<li>Codes QR lus avec ZXing, sans bibliothèques propriétaires</li>
+</ul>
+<p>Disponible en français, anglais, espagnol, catalan, galicien, basque, portugais, allemand, italien, néerlandais, polonais, russe, ukrainien, chinois, japonais, coréen, thaï et hindi.</p>

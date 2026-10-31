@@ -1,0 +1,1 @@
+Zaszyfrowane hasła na kartach QR do druku. Bez sieci, nic nie zapisuje.

@@ -21,6 +21,10 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.Hyphens
+import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -97,19 +101,19 @@ private fun PaperCriptApp(
                 Tab(
                     selected = tab == 0,
                     onClick = { tab = 0 },
-                    text = { Text(stringResource(R.string.tab_encrypt)) },
+                    text = { TabLabel(stringResource(R.string.tab_encrypt)) },
                     icon = { Icon(Icons.Filled.Lock, contentDescription = null) }
                 )
                 Tab(
                     selected = tab == 1,
                     onClick = { tab = 1 },
-                    text = { Text(stringResource(R.string.tab_decrypt)) },
+                    text = { TabLabel(stringResource(R.string.tab_decrypt)) },
                     icon = { Icon(Icons.Filled.CameraAlt, contentDescription = null) }
                 )
                 Tab(
                     selected = tab == 2,
                     onClick = { tab = 2 },
-                    text = { Text(stringResource(R.string.tab_sheet)) },
+                    text = { TabLabel(stringResource(R.string.tab_sheet)) },
                     icon = {
                         BadgedBox(badge = {
                             if (sheet.entries.isNotEmpty()) {
@@ -144,4 +148,19 @@ private fun PaperCriptApp(
             }
         }
     }
+}
+
+/**
+ * A tab's name. Long words in some languages ("Ontsleutelen", "Entschlüsseln")
+ * break over two lines with the language's hyphenation instead of being cut.
+ */
+@Composable
+private fun TabLabel(text: String) {
+    Text(
+        text,
+        style = LocalTextStyle.current.copy(hyphens = Hyphens.Auto),
+        textAlign = TextAlign.Center,
+        maxLines = 2,
+        overflow = TextOverflow.Ellipsis
+    )
 }

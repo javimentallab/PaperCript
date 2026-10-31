@@ -1,0 +1,1 @@
+Versleutelde wachtwoorden op QR-kaarten om te printen. Offline, bewaart niets.

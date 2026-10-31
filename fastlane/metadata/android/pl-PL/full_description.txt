@@ -1,0 +1,12 @@
+<p>PaperCript przechowuje twoje hasła <b>na papierze, zaszyfrowane</b>.</p>
+<p>Szyfrujesz hasło swoim hasłem głównym, aplikacja zamienia je w kartę z kodem QR, a ty drukujesz arkusz A4 z kartami do wycięcia. Aby odzyskać hasło, skanujesz jego kod QR i wpisujesz hasło główne.</p>
+<p>Utrata kartki nic cię nie kosztuje: karta jest bezwartościowa bez hasła głównego. Trzymaj je w szufladzie, rozdziel je albo zostaw kopię u kogoś zaufanego.</p>
+<ul>
+<li>Wyprowadzanie klucza przez scrypt, AES-256 + HMAC-SHA256 (najpierw szyfrowanie, potem MAC)</li>
+<li>Brak uprawnień sieciowych: aplikacja nie może otworzyć żadnego połączenia</li>
+<li>Nic nie zapisuje: ani haseł, ani hasła głównego, ani historii</li>
+<li>Bez zrzutów ekranu (FLAG_SECURE), schowek z danymi wrażliwymi czyszczony automatycznie</li>
+<li>Wbudowany generator haseł</li>
+<li>Kody QR odczytywane przez ZXing, bez bibliotek własnościowych</li>
+</ul>
+<p>Dostępna po polsku, angielsku, hiszpańsku, katalońsku, galicyjsku, baskijsku, portugalsku, francusku, niemiecku, włosku, niderlandzku, rosyjsku, ukraińsku, chińsku, japońsku, koreańsku, tajsku i w hindi.</p>

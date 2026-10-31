@@ -1,0 +1,1 @@
+Verschlüsselte Passwörter auf QR-Karten zum Drucken. Offline, speichert nichts.

@@ -9,3 +9,4 @@
 <li>Built-in password generator</li>
 <li>QR codes read with ZXing, no proprietary libraries</li>
 </ul>
+<p>Available in English, Spanish, Catalan, Galician, Basque, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese, Japanese, Korean, Thai and Hindi.</p>

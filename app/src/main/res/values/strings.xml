@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Default locale: English. Other languages live in values-<code>/strings.xml. -->
 <resources>
-    <string name="app_name">PaperCript</string>
+    <string name="app_name" translatable="false">PaperCript</string>
 
     <!-- Tabs -->
     <string name="tab_encrypt">Encrypt</string>

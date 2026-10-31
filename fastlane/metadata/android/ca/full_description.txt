@@ -1,0 +1,12 @@
+<p>PaperCript desa les teves contrasenyes <b>en paper, xifrades</b>.</p>
+<p>Xifres una contrasenya amb la teva contrasenya mestra, l'app la converteix en una targeta amb un codi QR i imprimeixes un full A4 de targetes retallables. Per recuperar una contrasenya, n'escanejes el QR i escrius la contrasenya mestra.</p>
+<p>Perdre el paper no et costa res: una targeta no val res sense la contrasenya mestra. Guarda-les en un calaix, reparteix-les o deixa'n una còpia a casa d'algú de confiança.</p>
+<ul>
+<li>Derivació de clau amb scrypt, AES-256 + HMAC-SHA256 (xifrar i després autenticar)</li>
+<li>Sense permís de xarxa: l'app no pot obrir cap connexió</li>
+<li>No desa res: ni contrasenyes, ni la contrasenya mestra, ni historial</li>
+<li>Sense captures de pantalla (FLAG_SECURE); el porta-retalls amb dades sensibles s'esborra sol</li>
+<li>Generador de contrasenyes inclòs</li>
+<li>Codis QR llegits amb ZXing, sense biblioteques propietàries</li>
+</ul>
+<p>Disponible en català, castellà, anglès, gallec, basc, portuguès, francès, alemany, italià, neerlandès, polonès, rus, ucraïnès, xinès, japonès, coreà, tai i hindi.</p>

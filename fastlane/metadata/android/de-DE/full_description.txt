@@ -1,0 +1,12 @@
+<p>PaperCript bewahrt deine Passwörter <b>auf Papier auf, verschlüsselt</b>.</p>
+<p>Du verschlüsselst ein Passwort mit deinem Master-Passwort, die App macht daraus eine Karte mit QR-Code, und du druckst ein A4-Blatt mit Karten zum Ausschneiden. Um ein Passwort zurückzubekommen, scannst du seinen QR-Code und gibst das Master-Passwort ein.</p>
+<p>Das Papier zu verlieren kostet dich nichts: Eine Karte ist ohne das Master-Passwort wertlos. Leg sie in eine Schublade, verteile sie oder lass eine Kopie bei jemandem, dem du vertraust.</p>
+<ul>
+<li>Schlüsselableitung mit scrypt, AES-256 + HMAC-SHA256 (Encrypt-then-MAC)</li>
+<li>Keine Netzwerkberechtigung: Die App kann keine Verbindung öffnen</li>
+<li>Speichert nichts: keine Passwörter, kein Master-Passwort, keinen Verlauf</li>
+<li>Keine Screenshots (FLAG_SECURE), sensible Zwischenablage wird automatisch geleert</li>
+<li>Eingebauter Passwortgenerator</li>
+<li>QR-Codes werden mit ZXing gelesen, ohne proprietäre Bibliotheken</li>
+</ul>
+<p>Verfügbar auf Deutsch, Englisch, Spanisch, Katalanisch, Galicisch, Baskisch, Portugiesisch, Französisch, Italienisch, Niederländisch, Polnisch, Russisch, Ukrainisch, Chinesisch, Japanisch, Koreanisch, Thai und Hindi.</p>

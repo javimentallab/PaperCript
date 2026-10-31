@@ -1,0 +1,1 @@
+Senhas cifradas em cartões QR imprimíveis. Sem rede, não guarda nada.

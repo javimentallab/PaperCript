@@ -1,0 +1,12 @@
+<p>O PaperCript guarda suas senhas <b>em papel, cifradas</b>.</p>
+<p>Você cifra uma senha com sua senha mestra, o app a transforma em um cartão com um código QR e você imprime uma folha A4 de cartões recortáveis. Para recuperar uma senha, você escaneia o QR dela e digita a senha mestra.</p>
+<p>Perder o papel não custa nada: um cartão não vale nada sem a senha mestra. Guarde-os numa gaveta, separe-os ou deixe uma cópia na casa de alguém de confiança.</p>
+<ul>
+<li>Derivação de chave com scrypt, AES-256 + HMAC-SHA256 (cifrar e depois autenticar)</li>
+<li>Sem permissão de rede: o app não consegue abrir nenhuma conexão</li>
+<li>Não guarda nada: nem senhas, nem a senha mestra, nem histórico</li>
+<li>Sem capturas de tela (FLAG_SECURE); a área de transferência com dados sensíveis é limpa sozinha</li>
+<li>Gerador de senhas incluído</li>
+<li>Códigos QR lidos com ZXing, sem bibliotecas proprietárias</li>
+</ul>
+<p>Disponível em português, inglês, espanhol, catalão, galego, basco, francês, alemão, italiano, holandês, polonês, russo, ucraniano, chinês, japonês, coreano, tailandês e hindi.</p>

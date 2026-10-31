@@ -1,0 +1,12 @@
+<p>PaperCript conserva le tue password <b>su carta, cifrate</b>.</p>
+<p>Cifri una password con la tua password principale, l'app la trasforma in una scheda con un codice QR e stampi un foglio A4 di schede da ritagliare. Per recuperare una password, ne scansioni il QR e scrivi la password principale.</p>
+<p>Perdere il foglio non ti costa nulla: una scheda non vale niente senza la password principale. Tienile in un cassetto, dividile o lasciane una copia a casa di qualcuno di cui ti fidi.</p>
+<ul>
+<li>Derivazione della chiave con scrypt, AES-256 + HMAC-SHA256 (cifra e poi autentica)</li>
+<li>Nessun permesso di rete: l'app non può aprire alcuna connessione</li>
+<li>Non salva nulla: né password, né password principale, né cronologia</li>
+<li>Niente screenshot (FLAG_SECURE), appunti sensibili cancellati automaticamente</li>
+<li>Generatore di password integrato</li>
+<li>Codici QR letti con ZXing, senza librerie proprietarie</li>
+</ul>
+<p>Disponibile in italiano, inglese, spagnolo, catalano, galiziano, basco, portoghese, francese, tedesco, olandese, polacco, russo, ucraino, cinese, giapponese, coreano, thailandese e hindi.</p>

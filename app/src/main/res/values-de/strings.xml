@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PaperCript</string>
 
     <string name="tab_encrypt">Verschlüsseln</string>
     <string name="tab_decrypt">Entschlüsseln</string>

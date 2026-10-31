@@ -1,0 +1,12 @@
+<p>PaperCript-ek zure pasahitzak <b>paperean gordetzen ditu, zifratuta</b>.</p>
+<p>Pasahitz bat zure pasahitz nagusiarekin zifratzen duzu, aplikazioak QR kodedun txartel bihurtzen du, eta ebakitzeko txartelez osatutako A4 orri bat inprimatzen duzu. Pasahitz bat berreskuratzeko, haren QRa eskaneatu eta pasahitz nagusia idazten duzu.</p>
+<p>Papera galtzeak ez dizu ezer kostatzen: txartel batek ez du ezer balio pasahitz nagusirik gabe. Gorde itzazu tiradera batean, banatu, edo utzi kopia bat konfiantzazko norbaiten etxean.</p>
+<ul>
+<li>Gakoaren deribazioa scrypt bidez, AES-256 + HMAC-SHA256 (zifratu eta gero autentifikatu)</li>
+<li>Sare-baimenik ez: aplikazioak ezin du konexiorik ireki</li>
+<li>Ez du ezer gordetzen: ez pasahitzik, ez pasahitz nagusirik, ez historiarik</li>
+<li>Pantaila-argazkirik ez (FLAG_SECURE); datu sentikorrak dituen arbela bakarrik garbitzen da</li>
+<li>Pasahitz-sortzailea barne</li>
+<li>QR kodeak ZXing-ekin irakurtzen dira, liburutegi jabedunik gabe</li>
+</ul>
+<p>Euskaraz, gaztelaniaz, ingelesez, katalanez, galizieraz, portugesez, frantsesez, alemanez, italieraz, nederlanderaz, polonieraz, errusieraz, ukraineraz, txineraz, japonieraz, koreeraz, thailanderaz eta hindiz eskuragarri.</p>

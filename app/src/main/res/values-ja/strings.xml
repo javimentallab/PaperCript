@@ -5,7 +5,6 @@
     not belong.
 -->
 <resources>
-    <string name="app_name">PaperCript</string>
 
     <string name="tab_encrypt">暗号化</string>
     <string name="tab_decrypt">復号</string>

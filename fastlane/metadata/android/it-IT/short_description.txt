@@ -1,0 +1,1 @@
+Password cifrate su schede QR stampabili. Senza rete, non salva nulla.

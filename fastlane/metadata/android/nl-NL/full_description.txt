@@ -1,0 +1,12 @@
+<p>PaperCript bewaart je wachtwoorden <b>op papier, versleuteld</b>.</p>
+<p>Je versleutelt een wachtwoord met je hoofdwachtwoord, de app maakt er een kaart met een QR-code van, en je drukt een A4-vel met uitknipkaarten af. Om een wachtwoord terug te krijgen, scan je de QR en typ je het hoofdwachtwoord.</p>
+<p>Het papier kwijtraken kost je niets: een kaart is waardeloos zonder het hoofdwachtwoord. Bewaar ze in een la, verdeel ze of laat een kopie achter bij iemand die je vertrouwt.</p>
+<ul>
+<li>Sleutelafleiding met scrypt, AES-256 + HMAC-SHA256 (encrypt-then-MAC)</li>
+<li>Geen netwerkrechten: de app kan geen verbinding openen</li>
+<li>Bewaart niets: geen wachtwoorden, geen hoofdwachtwoord, geen geschiedenis</li>
+<li>Geen schermafbeeldingen (FLAG_SECURE), gevoelig klembord wordt vanzelf gewist</li>
+<li>Ingebouwde wachtwoordgenerator</li>
+<li>QR-codes gelezen met ZXing, zonder propriëtaire bibliotheken</li>
+</ul>
+<p>Beschikbaar in het Nederlands, Engels, Spaans, Catalaans, Galicisch, Baskisch, Portugees, Frans, Duits, Italiaans, Pools, Russisch, Oekraïens, Chinees, Japans, Koreaans, Thai en Hindi.</p>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_encrypt">เข้ารหัส</string>
+    <string name="tab_decrypt">ถอดรหัส</string>
+    <string name="tab_sheet">แผ่น</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="copy">คัดลอก</string>
+    <string name="show">แสดง</string>
+    <string name="hide">ซ่อน</string>
+    <string name="grant_camera">อนุญาตให้ใช้กล้อง</string>
+    <string name="deriving_key">กำลังสร้างกุญแจ…</string>
+    <string name="no_label">(ไม่มีป้ายชื่อ)</string>
+    <string name="encrypt_title">เข้ารหัส</string>
+    <string name="encrypt_intro">สร้างรหัสที่จะอยู่บนบัตร ป้ายชื่อเป็นเพียงบันทึกไว้แยกบัตรแต่ละใบ</string>
+    <string name="label_field">ป้ายชื่อ (เช่น Gmail ที่ทำงาน)</string>
+    <string name="label_field_help">มีไว้ให้จำบัตรได้เท่านั้น ไม่มีผลต่อการเข้ารหัส และแก้ไขภายหลังได้</string>
+    <string name="password_field">รหัสผ่านที่จะเก็บ</string>
+    <string name="generate">สร้าง</string>
+    <string name="generator_length">ความยาว: %1$d</string>
+    <string name="generator_symbols">สัญลักษณ์</string>
+    <string name="generator_entropy">เอนโทรปีประมาณ %1$d บิต</string>
+    <string name="master_field">รหัสผ่านหลัก</string>
+    <string name="master_help">ไม่ถูกบันทึกไว้ที่ใดเลย หากลืมจะกู้คืนไม่ได้</string>
+    <string name="encrypt_button">เข้ารหัส</string>
+    <string name="encrypted_code">✓ เข้ารหัสแล้ว — พร้อมใส่ในแผ่น</string>
+    <string name="error_encrypt_failed">เข้ารหัสไม่ได้: %1$s</string>
+    <string name="code_footer">%1$d ตัวอักษร ไม่มี I, L, O หรือ U หากเห็นเหมือนตัวใด แสดงว่าเป็น 1, 1, 0 หรือ V</string>
+    <string name="add_to_sheet">เพิ่มลงแผ่นแล้วทำต่อ</string>
+    <string name="handwrite_note">คุณจะคัดลอกลงสมุดด้วยมือก็ได้ หากทำเช่นนั้น ให้ตรวจสิ่งที่เขียนโดยถอดรหัสดูก่อนทิ้งต้นฉบับ</string>
+    <string name="decrypt_title">ถอดรหัส</string>
+    <string name="scan_qr_button">สแกน QR ของบัตร</string>
+    <string name="read_from_qr">อ่านจาก QR แล้ว ขาดเพียงรหัสผ่านหลัก</string>
+    <string name="card_named">บัตร: %1$s</string>
+    <string name="looks_incomplete">ดูเหมือนไม่ครบ: ตัวอักษรขาดหายไป</string>
+    <string name="decrypt_button">ถอดรหัส</string>
+    <string name="password_result">รหัสผ่าน</string>
+    <string name="clipboard_cleared">ล้างหลังคัดลอก %1$d วินาที หรือเมื่อคุณกลับเข้าแอป — Android ไม่ให้แอปใดแตะคลิปบอร์ดขณะอยู่เบื้องหลัง</string>
+    <string name="clipboard_clear_now">ล้างเดี๋ยวนี้</string>
+    <string name="error_bad_key">ไม่ตรงกัน รหัสผ่านหลักผิด หรืออ่านตัวอักษรผิด ให้เทียบช่องกับกระดาษ</string>
+    <string name="error_empty_master">รหัสผ่านหลักว่างอยู่</string>
+    <string name="error_invalid_character">ตัวอักษรไม่ถูกต้อง: %1$s</string>
+    <string name="error_too_short">รหัสสั้นเกินไป</string>
+    <string name="error_unsupported_version">บัตรนี้ใช้รูปแบบที่แอปเวอร์ชันนี้ไม่อ่านแล้ว (%1$s)</string>
+    <string name="entry_status">%1$d ตัวอักษร · ตำแหน่ง %2$d</string>
+    <string name="backspace">ลบ</string>
+    <string name="clear">ล้าง</string>
+    <string name="camera_open_failed">เปิดกล้องไม่ได้: %1$s</string>
+    <string name="qr_aim">เล็งไปที่ QR บนบัตร</string>
+    <string name="qr_not_ours">QR นี้ไม่ได้มาจากแอปนี้</string>
+    <string name="qr_found">พบบัตร: %1$s</string>
+    <string name="qr_use">ใช้บัตรนี้</string>
+    <string name="sheet_title">แผ่นสำหรับพิมพ์</string>
+    <string name="sheet_empty">ยังไม่มีบัตร ไปที่เข้ารหัส เข้ารหัสรหัสผ่าน แล้วแตะ “เพิ่มลงแผ่นแล้วทำต่อ” หนึ่งแผ่นใส่ได้ %1$d ใบ ใน 4 คอลัมน์</string>
+    <string name="sheet_memory_warning">รายการนี้มีอยู่เฉพาะขณะเปิดแอปเท่านั้น พิมพ์ก่อนปิดแอป</string>
+    <string name="print_button">พิมพ์หรือบันทึกเป็น PDF</string>
+    <string name="clear_sheet">ล้างแผ่น</string>
+    <string name="confirm_clear_title">ล้างแผ่นไหม</string>
+    <string name="confirm_clear_text">บัตร %1$d ใบจะถูกทิ้ง ไม่มีสำเนาที่ใดเลย หากยังไม่ได้พิมพ์ คุณจะเสียไป</string>
+    <string name="remove">นำออก</string>
+    <string name="sheet_page">แผ่นที่ %1$d</string>
+    <string name="layout_title">บัตรต่อแผ่น</string>
+    <string name="layout_columns">คอลัมน์: %1$d</string>
+    <string name="layout_rows">แถว: %1$d</string>
+    <string name="layout_summary">%1$d ใบต่อแผ่น · บัตร %2$s × %3$s มม. · QR %4$s มม.</string>
+    <string name="layout_qr_small">QR จะเล็กลงเหลือ %1$s มม. และอาจสแกนยาก ต่ำกว่าประมาณ %2$s มม. ความน่าเชื่อถือจะลดลง — ใช้บัตรต่อแผ่นให้น้อยลง</string>
+    <string name="print_header_title">PaperCript — รหัสที่เข้ารหัสแล้ว</string>
+    <string name="print_header_warning">หากไม่มีรหัสผ่านหลัก บัตรเหล่านี้ไม่มีค่า อย่าเขียนไว้ที่นี่</string>
+    <plurals name="card_count">
+        <item quantity="other">บัตร %1$d ใบ</item>
+    </plurals>
+    <plurals name="sheet_count">
+        <item quantity="other">กระดาษ A4 %1$d แผ่น</item>
+    </plurals>
+    <plurals name="cards_pending">
+        <item quantity="other">บัตร %1$d ใบบนแผ่นกำลังรอพิมพ์</item>
+    </plurals>
+</resources>

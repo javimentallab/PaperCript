@@ -1,0 +1,1 @@
+Ora punta ad Android 16 (livello API 36). Il funzionamento dell'app non cambia.

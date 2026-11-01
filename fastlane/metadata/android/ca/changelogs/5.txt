@@ -1,0 +1,1 @@
+Preparada per a Android 16 (nivell d'API 36). L'app funciona igual.

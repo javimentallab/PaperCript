@@ -1,5 +1,7 @@
 # PaperCript
 
+<p align="center">English · <a href="README.es.md">Español</a></p>
+
 <p align="center">
   <img src="fastlane/metadata/android/en-US/images/featureGraphic.png" alt="PaperCript" width="720">
 </p>
@@ -128,9 +130,9 @@ care, but run the full cycle with a throwaway password before trusting it with a
 
 ## Languages
 
-Eleven languages, all 78 strings complete in every one: **English** (default), **Spanish,
-Catalan, Galician, Basque, French, German, Italian, Portuguese, Simplified Chinese and
-Japanese**.
+Eighteen languages, all 68 translatable strings complete in every one: **English** (default),
+**Spanish, Catalan, Galician, Basque, French, German, Italian, Portuguese, Dutch, Polish,
+Russian, Ukrainian, Simplified Chinese, Japanese, Korean, Thai and Hindi**.
 
 The app follows the phone language and falls back to English for anything else. On
 Android 13+ it declares `localeConfig`, so you can pin a language for PaperCript alone in
@@ -165,8 +167,9 @@ sentence.
 The APK lands in `app/build/outputs/apk/debug/`. For real use, build a signed release with
 your own keystore.
 
-Requires JDK 17+ and Android SDK 35. No runtime network dependencies.
+Requires JDK 17+ and Android SDK 36. No runtime network dependencies.
 
 ## License
 
-[MIT](LICENSE) © [javimentallab](https://github.com/javimentallab)
+[MIT](LICENSE) © [javimentallab](https://github.com/javimentallab). Third-party licences are
+in [NOTICE](NOTICE).

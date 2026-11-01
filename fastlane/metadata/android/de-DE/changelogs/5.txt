@@ -1,0 +1,1 @@
+Zielversion ist jetzt Android 16 (API-Level 36). An der Funktionsweise der App ändert sich nichts.

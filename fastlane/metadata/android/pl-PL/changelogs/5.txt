@@ -1,0 +1,1 @@
+Aplikacja jest teraz przeznaczona na Androida 16 (poziom API 36). Jej działanie się nie zmienia.

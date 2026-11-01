@@ -1,0 +1,1 @@
+Agora voltado para o Android 16 (nível de API 36). O app continua funcionando do mesmo jeito.

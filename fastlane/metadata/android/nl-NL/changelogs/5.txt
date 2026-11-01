@@ -1,0 +1,1 @@
+Richt zich nu op Android 16 (API-niveau 36). De app werkt hetzelfde als voorheen.

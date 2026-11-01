@@ -1,0 +1,1 @@
+Cible désormais Android 16 (niveau d'API 36). Le fonctionnement de l'application ne change pas.

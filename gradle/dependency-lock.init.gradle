@@ -1,0 +1,11 @@
+// Writes app/gradle.lockfile, the list of runtime libraries that Trivy reads:
+//
+//   ./gradlew -I gradle/dependency-lock.init.gradle :app:dependencies --write-locks
+//
+// The normal build does not use this script or that file: Gradle only looks at a lockfile
+// when locking is switched on, and it is only switched on here.
+allprojects {
+    configurations.matching { it.name.endsWith("RuntimeClasspath") }.configureEach {
+        resolutionStrategy.activateDependencyLocking()
+    }
+}

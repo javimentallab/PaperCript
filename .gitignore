@@ -13,6 +13,9 @@ captures/
 # Contiene la ruta local del SDK de Android, distinta en cada maquina
 local.properties
 
+# Left empty by --write-locks; only app/gradle.lockfile matters
+settings-gradle.lockfile
+
 *.apk
 *.aab
 *.keystore

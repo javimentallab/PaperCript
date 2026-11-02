@@ -21,3 +21,7 @@ jobs:
           java-version: '21'
       - name: Unit tests
         run: bash ./gradlew testDebugUnitTest --no-daemon
+      - name: Dependency list for Trivy is up to date
+        run: |
+          bash ./gradlew -I gradle/dependency-lock.init.gradle :app:dependencies --write-locks --no-daemon
+          git diff --exit-code app/gradle.lockfile

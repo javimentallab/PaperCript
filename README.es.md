@@ -111,6 +111,8 @@ cambia las cosas.
   que ocurra con ella en primer plano. También hay un botón para borrarlo en el acto.
 - Sin copias de seguridad (`allowBackup=false`) y sin escribir nada en disco.
 - Las claves derivadas se ponen a cero en memoria en cuanto se usan.
+- **Política de privacidad dentro de la app**: un botón al final de la pestaña Cifrar la muestra como
+  texto, en tu idioma, así que leerla no necesita red. También está en [PRIVACY](PRIVACY.md), en inglés.
 
 **Lo que no cubre, y deberías saber:**
 
@@ -129,7 +131,7 @@ el ciclo completo con una contraseña de usar y tirar antes de confiarle una de 
 
 ## Idiomas
 
-Dieciocho idiomas, con las 68 cadenas traducibles completas en todos: **inglés** (el predeterminado),
+Dieciocho idiomas, con las 70 cadenas traducibles completas en todos: **inglés** (el predeterminado),
 **castellano, catalán, gallego, euskera, francés, alemán, italiano, portugués, neerlandés, polaco, ruso,
 ucraniano, chino simplificado, japonés, coreano, tailandés e hindi**.
 

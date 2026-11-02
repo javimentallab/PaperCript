@@ -111,6 +111,8 @@ passphrase (77–90 bits) is what actually moves the needle.
   clear it immediately.
 - No backups (`allowBackup=false`) and nothing written to disk.
 - Derived keys are zeroed in memory as soon as they are used.
+- **Privacy policy inside the app**: a button at the bottom of the Encrypt tab shows it as text,
+  in your language, so reading it needs no network. It is also in [PRIVACY](PRIVACY.md).
 
 **What it does not cover, and you should know:**
 
@@ -130,7 +132,7 @@ care, but run the full cycle with a throwaway password before trusting it with a
 
 ## Languages
 
-Eighteen languages, all 68 translatable strings complete in every one: **English** (default),
+Eighteen languages, all 70 translatable strings complete in every one: **English** (default),
 **Spanish, Catalan, Galician, Basque, French, German, Italian, Portuguese, Dutch, Polish,
 Russian, Ukrainian, Simplified Chinese, Japanese, Korean, Thai and Hindi**.
 

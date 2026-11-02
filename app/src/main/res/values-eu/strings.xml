@@ -102,4 +102,7 @@
     <string name="print_header_title">PaperCript — kode zifratuak</string>
     <string name="print_header_warning">Pasahitz nagusirik gabe txartel hauek ez dute
         ezertarako balio. Ez idatzi hemen.</string>
+
+    <string name="privacy_policy">Pribatutasun-politika</string>
+    <string name="privacy_text">PaperCript-ek (javimentallab) ez du datu pertsonalik biltzen. Ez du konturik, iragarkirik, analisirik ezta akatsen txostenik ere, eta Interneteko baimena kentzen du; beraz, ezin du ezer inora bidali.\n\nKamera: txartel baten QR kodea eskaneatzean bakarrik erabiltzen da, hura deszifratzeko. Irudiak gailuan aztertzen dira, eta ez dira inoiz gordetzen ezta bidaltzen ere.\n\nGailuan gordetzen dena: ezer ez. Pasahitzak, pasahitz nagusia eta prestatzen dituzun txartelak memorian bakarrik daude, eta aplikazioa ixtean desagertzen dira. Aplikazioaren babeskopia desgaituta dago.\n\nInprimatzea: inprimatzen duzun orria Androiden inprimatze-sistemara eta aukeratzen duzun inprimatze-zerbitzura pasatzen da. Handik aurrera gertatzen dena zerbitzu horren araberakoa da.\n\nArbela: Kopiatu sakatzen baduzu, balioa Androiden arbelera doa. PaperCript-ek laster ezabatzen du, edo aplikaziora itzultzean, Androidek ez baitu uzten arbela atzeko planotik ukitzen. Ordura arte baimena duten beste aplikazioek irakur dezakete.\n\nPolitika honi buruzko galderak: ireki gai bat hemen: https://github.com/javimentallab/PaperCript/issues</string>
 </resources>

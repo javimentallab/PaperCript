@@ -89,4 +89,7 @@
 
     <string name="print_header_title">PaperCript — 加密代码</string>
     <string name="print_header_warning">没有主密码,这些卡片毫无用处。请勿把主密码写在此处。</string>
+
+    <string name="privacy_policy">隐私政策</string>
+    <string name="privacy_text">PaperCript（javimentallab 出品）不收集任何个人数据。它没有账户、广告、分析和崩溃报告，并移除了互联网权限，因此无法向任何地方发送任何内容。\n\n相机：仅在你扫描卡片二维码进行解密时使用。画面在设备上分析，绝不会保存或发送。\n\n设备上存储的内容：没有。密码、主密码和你制作的卡片只保存在内存中，关闭应用后即消失。应用备份已停用。\n\n打印：你打印的纸张会交给 Android 打印系统和你选择的打印服务。之后如何处理取决于该服务。\n\n剪贴板：如果你点按“复制”，内容会进入 Android 剪贴板。PaperCript 会在短时间后或你返回应用时将其清除，因为 Android 不允许应用在后台操作剪贴板。在此之前，你允许的其他应用可以读取它。\n\n关于本政策的问题：请在 https://github.com/javimentallab/PaperCript/issues 提交问题</string>
 </resources>

@@ -111,4 +111,7 @@
     <string name="print_header_title">PaperCript — códigos cifrados</string>
     <string name="print_header_warning">Sin la clave maestra estas tarjetas no valen nada.
         No la apuntes aquí.</string>
+
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="privacy_text">PaperCript, de javimentallab, no recoge ningún dato personal. No tiene cuentas, anuncios, analíticas ni informes de fallos, y quita el permiso de Internet, así que no puede enviar nada a ninguna parte.\n\nCámara: solo se usa al escanear el QR de una tarjeta para descifrarla. Las imágenes se analizan en el dispositivo y nunca se guardan ni se envían.\n\nQué se guarda en el dispositivo: nada. Las contraseñas, la clave maestra y las tarjetas que preparas solo están en memoria y desaparecen al cerrar la app. La copia de seguridad de la app está desactivada.\n\nImprimir: la hoja que imprimes pasa al sistema de impresión de Android y al servicio de impresión que elijas. Lo que ocurra con ella a partir de ahí depende de ese servicio.\n\nPortapapeles: si tocas Copiar, el valor va al portapapeles de Android. PaperCript lo borra al poco tiempo o al volver a la app, porque Android no deja tocar el portapapeles desde segundo plano. Hasta entonces pueden leerlo otras apps a las que se lo permitas.\n\nPreguntas sobre esta política: abre una incidencia en https://github.com/javimentallab/PaperCript/issues</string>
 </resources>

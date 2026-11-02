@@ -77,4 +77,7 @@
         <item quantity="one">%1$d kaart op het vel, wacht om afgedrukt te worden.</item>
         <item quantity="other">%1$d kaarten op het vel, wachten om afgedrukt te worden.</item>
     </plurals>
+
+    <string name="privacy_policy">Privacybeleid</string>
+    <string name="privacy_text">PaperCript, van javimentallab, verzamelt geen persoonsgegevens. De app heeft geen accounts, advertenties, analyses of crashrapporten en verwijdert de internetmachtiging, dus kan nergens iets naartoe sturen.\n\nCamera: alleen gebruikt als je de QR-code van een kaart scant om die te ontsleutelen. De beelden worden op het apparaat geanalyseerd en nooit opgeslagen of verstuurd.\n\nOpgeslagen op het apparaat: niets. Wachtwoorden, het hoofdwachtwoord en de kaarten die je maakt staan alleen in het geheugen en zijn weg als je de app sluit. De back-up van de app staat uit.\n\nAfdrukken: een vel dat je afdrukt, gaat naar het afdruksysteem van Android en naar de afdrukservice die je kiest. Wat er daarna mee gebeurt, hangt van die service af.\n\nKlembord: als je op Kopiëren tikt, gaat de waarde naar het Android-klembord. PaperCript wist die na korte tijd of wanneer je terugkomt in de app, omdat Android apps het klembord niet vanuit de achtergrond laat aanraken. Tot dan kunnen andere apps die je toestemming geeft hem lezen.\n\nVragen over dit beleid: open een issue op https://github.com/javimentallab/PaperCript/issues</string>
 </resources>

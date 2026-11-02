@@ -103,4 +103,7 @@
     <string name="print_header_title">PaperCript — codici cifrati</string>
     <string name="print_header_warning">Senza la password principale queste tessere non
         valgono nulla. Non scriverla qui.</string>
+
+    <string name="privacy_policy">Informativa sulla privacy</string>
+    <string name="privacy_text">PaperCript, di javimentallab, non raccoglie dati personali. Non ha account, pubblicità, analisi né segnalazioni di arresti anomali, e rimuove l\'autorizzazione Internet, quindi non può inviare nulla da nessuna parte.\n\nFotocamera: usata solo quando scansioni il QR di una tessera per decifrarla. Le immagini vengono analizzate sul dispositivo e non vengono mai salvate né inviate.\n\nSalvato sul dispositivo: niente. Le password, la password principale e le tessere che prepari restano solo in memoria e spariscono alla chiusura dell\'app. Il backup dell\'app è disattivato.\n\nStampa: il foglio che stampi passa al sistema di stampa di Android e al servizio di stampa che scegli. Quello che succede da lì in poi dipende da quel servizio.\n\nAppunti: se tocchi Copia, il valore va negli appunti di Android. PaperCript lo cancella dopo poco o quando torni nell\'app, perché Android non lascia toccare gli appunti in background. Fino ad allora possono leggerlo altre app a cui lo consenti.\n\nDomande su questa informativa: apri una segnalazione su https://github.com/javimentallab/PaperCript/issues</string>
 </resources>

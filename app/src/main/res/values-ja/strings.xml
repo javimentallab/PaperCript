@@ -89,4 +89,7 @@
 
     <string name="print_header_title">PaperCript — 暗号化コード</string>
     <string name="print_header_warning">マスターパスワードがなければ、これらのカードは何の価値もありません。ここに書かないでください。</string>
+
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="privacy_text">PaperCript（javimentallab）は個人データを収集しません。アカウント、広告、分析、クラッシュレポートはなく、インターネットの権限を削除しているため、どこにも何も送信できません。\n\nカメラ：カードの QR コードをスキャンして復号するときにのみ使用します。画像は端末上で解析され、保存も送信もされません。\n\n端末に保存されるもの：ありません。パスワード、マスターパスワード、作成したカードはメモリ上にのみあり、アプリを閉じると消えます。アプリのバックアップは無効です。\n\n印刷：印刷する用紙は Android の印刷システムと、選択した印刷サービスに渡されます。その後の扱いはそのサービスによります。\n\nクリップボード：「コピー」をタップすると、値は Android のクリップボードに入ります。PaperCript は少し後、またはアプリに戻ったときに消去します。Android はバックグラウンドのアプリにクリップボードを触らせないためです。それまでは許可した他のアプリが読み取れます。\n\nこのポリシーに関するご質問：https://github.com/javimentallab/PaperCript/issues で Issue を作成してください</string>
 </resources>

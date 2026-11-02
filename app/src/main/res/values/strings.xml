@@ -112,4 +112,7 @@
     <string name="print_header_title">PaperCript — encrypted codes</string>
     <string name="print_header_warning">Without the master password these cards are
         worthless. Do not write it here.</string>
+
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="privacy_text">PaperCript, by javimentallab, collects no personal data. It has no accounts, no ads, no analytics and no crash reporting, and it removes the Internet permission, so it cannot send anything anywhere.\n\nCamera: used only when you scan a card\'s QR code to decrypt it. The frames are analysed on the device and are never saved or sent.\n\nStored on the device: nothing. Passwords, the master password and the cards you build are kept in memory only and are gone when you close the app. App backup is disabled.\n\nPrinting: a sheet you print is handed to Android\'s print system and to the print service you choose. What happens to it from there depends on that service.\n\nClipboard: if you tap Copy, the value goes to the Android clipboard. PaperCript clears it after a short time or when you come back to the app, because Android does not let apps touch the clipboard from the background. Until then other apps you allow can read it.\n\nQuestions about this policy: open an issue at https://github.com/javimentallab/PaperCript/issues</string>
 </resources>

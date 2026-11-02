@@ -1,10 +1,10 @@
 # Privacy policy — PaperCript
 
-*Last updated: 31 October 2026*
+*Last updated: 2 November 2026*
 
-PaperCript collects no personal data. It has no accounts, no ads, no analytics and no
-crash reporting, and it removes the Internet permission, so it cannot send anything
-anywhere.
+PaperCript, by javimentallab, collects no personal data. It has no accounts, no ads, no
+analytics and no crash reporting, and it removes the Internet permission, so it cannot
+send anything anywhere.
 
 ## Permissions
 
@@ -24,8 +24,9 @@ sheet from there depends on that service.
 
 ## Clipboard
 
-If you tap **Copy**, the value goes to the Android clipboard. PaperCript clears it again
-after a short time, but until then other apps you allow can read it.
+If you tap **Copy**, the value goes to the Android clipboard. PaperCript clears it after a
+short time or when you come back to the app, because Android does not let apps touch the
+clipboard from the background. Until then other apps you allow can read it.
 
 ## Contact
 

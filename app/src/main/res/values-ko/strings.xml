@@ -74,4 +74,7 @@
     <plurals name="cards_pending">
         <item quantity="other">인쇄를 기다리는 카드 %1$d장이 시트에 있습니다.</item>
     </plurals>
+
+    <string name="privacy_policy">개인정보처리방침</string>
+    <string name="privacy_text">PaperCript(javimentallab)는 개인 정보를 수집하지 않습니다. 계정, 광고, 분석, 충돌 보고가 없으며 인터넷 권한을 제거했기 때문에 어디로도 아무것도 보낼 수 없습니다.\n\n카메라: 카드의 QR 코드를 스캔해 복호화할 때만 사용합니다. 화면은 기기에서 분석되며 저장하거나 전송하지 않습니다.\n\n기기에 저장되는 것: 없습니다. 비밀번호, 마스터 비밀번호, 만든 카드는 메모리에만 있으며 앱을 닫으면 사라집니다. 앱 백업은 꺼져 있습니다.\n\n인쇄: 인쇄하는 시트는 Android 인쇄 시스템과 선택한 인쇄 서비스로 전달됩니다. 그 이후의 처리는 해당 서비스에 따라 다릅니다.\n\n클립보드: 복사를 누르면 값이 Android 클립보드로 들어갑니다. PaperCript는 잠시 후 또는 앱으로 돌아오면 이를 지웁니다. Android는 앱이 백그라운드에서 클립보드에 손대는 것을 허용하지 않기 때문입니다. 그 전까지는 허용한 다른 앱이 읽을 수 있습니다.\n\n이 방침에 관한 문의: https://github.com/javimentallab/PaperCript/issues 에서 이슈를 등록하세요</string>
 </resources>

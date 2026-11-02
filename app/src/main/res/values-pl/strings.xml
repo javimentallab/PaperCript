@@ -83,4 +83,7 @@
         <item quantity="many">%1$d kart na arkuszu czeka na wydruk.</item>
         <item quantity="other">%1$d karty na arkuszu czeka na wydruk.</item>
     </plurals>
+
+    <string name="privacy_policy">Polityka prywatności</string>
+    <string name="privacy_text">PaperCript od javimentallab nie zbiera danych osobowych. Nie ma kont, reklam, analityki ani raportów o awariach, a uprawnienie do internetu jest usunięte, więc aplikacja nie może niczego nigdzie wysłać.\n\nAparat: używany tylko podczas skanowania kodu QR karty w celu jej odszyfrowania. Obraz jest analizowany na urządzeniu i nigdy nie jest zapisywany ani wysyłany.\n\nNa urządzeniu zapisywane jest: nic. Hasła, hasło główne i przygotowane karty są tylko w pamięci i znikają po zamknięciu aplikacji. Kopia zapasowa aplikacji jest wyłączona.\n\nDrukowanie: drukowany arkusz trafia do systemu drukowania Androida i do wybranej usługi drukowania. To, co dzieje się z nim dalej, zależy od tej usługi.\n\nSchowek: gdy dotkniesz Kopiuj, wartość trafia do schowka Androida. PaperCript czyści go po krótkim czasie albo gdy wrócisz do aplikacji, bo Android nie pozwala ruszać schowka w tle. Do tego czasu mogą ją odczytać inne aplikacje, którym na to pozwolisz.\n\nPytania o tę politykę: zgłoś je na https://github.com/javimentallab/PaperCript/issues</string>
 </resources>

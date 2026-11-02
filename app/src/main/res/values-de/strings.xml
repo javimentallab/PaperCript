@@ -104,4 +104,7 @@
     <string name="print_header_title">PaperCript — verschlüsselte Codes</string>
     <string name="print_header_warning">Ohne das Hauptpasswort sind diese Karten wertlos.
         Schreib es nicht hierher.</string>
+
+    <string name="privacy_policy">Datenschutzerklärung</string>
+    <string name="privacy_text">PaperCript von javimentallab erhebt keine personenbezogenen Daten. Es gibt keine Konten, keine Werbung, keine Analysen und keine Absturzberichte, und die Internetberechtigung ist entfernt, sodass die App nichts irgendwohin senden kann.\n\nKamera: wird nur verwendet, wenn du den QR-Code einer Karte zum Entschlüsseln scannst. Die Bilder werden auf dem Gerät ausgewertet und nie gespeichert oder gesendet.\n\nAuf dem Gerät gespeichert: nichts. Passwörter, das Hauptpasswort und die Karten, die du erstellst, liegen nur im Arbeitsspeicher und sind weg, sobald du die App schließt. Die App-Sicherung ist deaktiviert.\n\nDrucken: Ein Blatt, das du druckst, geht an das Drucksystem von Android und an den Druckdienst, den du wählst. Was danach damit geschieht, hängt von diesem Dienst ab.\n\nZwischenablage: Wenn du auf Kopieren tippst, landet der Wert in der Android-Zwischenablage. PaperCript löscht ihn nach kurzer Zeit oder sobald du zur App zurückkehrst, weil Android Apps im Hintergrund nicht an die Zwischenablage lässt. Bis dahin können ihn andere Apps lesen, denen du es erlaubst.\n\nFragen zu dieser Erklärung: Eröffne ein Issue unter https://github.com/javimentallab/PaperCript/issues</string>
 </resources>

@@ -231,5 +231,7 @@ fun EncryptScreen(
                 style = MaterialTheme.typography.bodySmall
             )
         }
+
+        PrivacyPolicy()
     }
 }

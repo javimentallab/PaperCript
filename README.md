@@ -36,7 +36,7 @@ only storage.
 ## Using it
 
 **Encrypt** → label, password (typed or generated) and master
-password → *Add to sheet and next*. The master password is kept between entries so you can
+password → *Encrypt* → *Add to sheet and next*. The master password is kept between entries so you can
 chain several in one go.
 
 **Sheet** → pick columns and rows, see how the page will look, then *Print or save as PDF*.
@@ -167,7 +167,7 @@ sentence.
 The APK lands in `app/build/outputs/apk/debug/`. For real use, build a signed release with
 your own keystore.
 
-Requires JDK 17+ and Android SDK 36. No runtime network dependencies.
+Requires JDK 21 and Android SDK 36. No runtime network dependencies.
 
 ## Contributing
 

@@ -35,8 +35,8 @@ almacenamiento.
 
 ## Cómo se usa
 
-**Cifrar** → etiqueta, contraseña (escrita o generada) y clave maestra → *Añadir a la hoja y
-siguiente*. La clave maestra se conserva entre entradas para que puedas encadenar varias de golpe.
+**Cifrar** → etiqueta, contraseña (escrita o generada) y clave maestra → *Cifrar* → *Añadir a la
+hoja y siguiente*. La clave maestra se conserva entre entradas para que puedas encadenar varias de golpe.
 
 **Hoja** → elige columnas y filas, mira cómo quedará la página y pulsa *Imprimir o guardar en PDF*.
 El diálogo de impresión de Android sirve tanto para una impresora de verdad como para un PDF. Luego
@@ -165,7 +165,7 @@ espacio, que en idiomas sin separadores de palabras cae en mitad de una frase.
 El APK queda en `app/build/outputs/apk/debug/`. Para uso real, compila una release firmada con tu propio
 almacén de claves.
 
-Requiere JDK 17+ y Android SDK 36. Sin dependencias de red en tiempo de ejecución.
+Requiere JDK 21 y Android SDK 36. Sin dependencias de red en tiempo de ejecución.
 
 ## Contribuir
 

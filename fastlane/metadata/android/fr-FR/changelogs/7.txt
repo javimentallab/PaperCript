@@ -1,0 +1,1 @@
+La politique de confidentialité peut désormais être lue dans l'application, en bas de l'onglet Chiffrer. Le reste de l'application fonctionne de la même façon.

@@ -1,0 +1,1 @@
+A política de privacidade agora pode ser lida dentro do app, no fim da aba Cifrar. O resto do funcionamento do app não muda.

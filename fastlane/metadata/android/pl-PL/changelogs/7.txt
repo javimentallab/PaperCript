@@ -1,0 +1,1 @@
+Politykę prywatności można teraz przeczytać w aplikacji, na dole karty Szyfruj. Reszta działa bez zmian.

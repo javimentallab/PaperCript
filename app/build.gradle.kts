@@ -14,8 +14,8 @@ android {
         applicationId = "com.javimetallab.papercript"
         minSdk = 26
         targetSdk = 36
-        versionCode = 5
-        versionName = "1.3.1"
+        versionCode = 6
+        versionName = "1.3.2"
     }
 
     // The release key lives outside the repo; keystore.properties (gitignored)
@@ -66,6 +66,29 @@ android {
     packaging {
         resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
     }
+}
+
+// The licences of the bundled libraries ask for their notices to travel with the binary:
+// the root NOTICE goes into the APK as assets/NOTICE.
+abstract class NoticeAsset : DefaultTask() {
+    @get:InputFile
+    @get:PathSensitive(PathSensitivity.NONE)
+    abstract val notice: RegularFileProperty
+
+    @get:OutputDirectory
+    abstract val outputDir: DirectoryProperty
+
+    @TaskAction
+    fun copy() {
+        notice.get().asFile.copyTo(outputDir.file("NOTICE").get().asFile, overwrite = true)
+    }
+}
+
+androidComponents.onVariants { variant ->
+    val task = tasks.register<NoticeAsset>("${variant.name}NoticeAsset") {
+        notice.set(rootProject.layout.projectDirectory.file("NOTICE"))
+    }
+    variant.sources.assets?.addGeneratedSourceDirectory(task, NoticeAsset::outputDir)
 }
 
 dependencies {

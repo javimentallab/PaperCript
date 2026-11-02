@@ -1,0 +1,1 @@
+Die Lizenzhinweise der enthaltenen Bibliotheken sind jetzt in der App enthalten. An der Funktionsweise ändert sich nichts.

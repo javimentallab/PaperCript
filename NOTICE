@@ -5,7 +5,7 @@ Licensed under the MIT License (see LICENSE).
 Third-party software in the APK
 -------------------------------
 The release APK contains the libraries below, each under its own licence. The list is
-the release runtime classpath of version 1.3.1. R8 removes unused code, so not every
+the release runtime classpath. R8 removes unused code, so not every
 class of these libraries ends up in the APK.
 
 Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0)

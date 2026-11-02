@@ -1,0 +1,1 @@
+Os avisos de licença das bibliotecas incluídas agora vêm dentro do app. O funcionamento do app não muda.

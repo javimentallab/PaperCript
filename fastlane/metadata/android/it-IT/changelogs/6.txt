@@ -1,0 +1,1 @@
+Le note di licenza delle librerie incluse ora si trovano nell'app. Il funzionamento non cambia.

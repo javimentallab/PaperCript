@@ -1,0 +1,1 @@
+Les mentions de licence des bibliothèques incluses sont désormais dans l'application. Son fonctionnement ne change pas.

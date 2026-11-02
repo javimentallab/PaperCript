@@ -1,0 +1,1 @@
+Els avisos de llicència de les biblioteques incloses ara van dins de l'aplicació. No canvia com funciona.

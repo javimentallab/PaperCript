@@ -1,0 +1,1 @@
+Informacje o licencjach dołączonych bibliotek znajdują się teraz w aplikacji. Sposób działania aplikacji się nie zmienia.

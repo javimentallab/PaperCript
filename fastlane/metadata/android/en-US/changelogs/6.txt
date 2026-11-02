@@ -1,0 +1,1 @@
+The licence notices of the bundled libraries now travel inside the app. No change in how the app works.

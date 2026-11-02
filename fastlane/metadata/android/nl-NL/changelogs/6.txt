@@ -1,0 +1,1 @@
+De licentievermeldingen van de meegeleverde bibliotheken zitten nu in de app. De werking van de app verandert niet.

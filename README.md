@@ -169,6 +169,10 @@ your own keystore.
 
 Requires JDK 17+ and Android SDK 36. No runtime network dependencies.
 
+## Contributing
+
+See [CONTRIBUTING](CONTRIBUTING.md). To report a security problem privately, see [SECURITY](SECURITY.md).
+
 ## License
 
 [MIT](LICENSE) © [javimentallab](https://github.com/javimentallab). Third-party licences are

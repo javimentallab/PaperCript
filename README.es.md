@@ -167,6 +167,10 @@ almacén de claves.
 
 Requiere JDK 17+ y Android SDK 36. Sin dependencias de red en tiempo de ejecución.
 
+## Contribuir
+
+Consulta [CONTRIBUTING](CONTRIBUTING.md), en inglés. Para avisar en privado de un problema de seguridad, consulta [SECURITY](SECURITY.md).
+
 ## Licencia
 
 [MIT](LICENSE) © [javimentallab](https://github.com/javimentallab). Las licencias de terceros están en

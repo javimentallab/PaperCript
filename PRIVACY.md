@@ -2,6 +2,9 @@
 
 *Last updated: 2 November 2026*
 
+> **Notice.** This privacy policy is under legal review. The revised version will replace this text once
+> the review is complete. Until then, this version applies.
+
 PaperCript, by javimentallab, collects no personal data. It has no accounts, no ads, no
 analytics and no crash reporting, and it removes the Internet permission, so it cannot
 send anything anywhere.

@@ -4,7 +4,7 @@
 
 *Versión en español: [TERMS.es.md](TERMS.es.md)*
 
-**1. Identification of the Provider.** The PaperCript application (the "App") is offered on Google Play by [REDACTED], with address at [REDACTED] (the "Provider"). Any communication regarding these terms may be addressed to the Provider at [REDACTED] or at https://github.com/javimentallab/PaperCript/issues.
+**1. Identification of the Provider.** The PaperCript application (the "App") is offered on Google Play by Javier Comyn Pérez, with address at calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (the "Provider"). Any communication regarding these terms may be addressed to the Provider at jotacomyn@gmail.com or at https://github.com/javimentallab/PaperCript/issues.
 
 **2. Purpose and licence.** These terms govern the use of the App distributed through Google Play. Purchasing the App grants the User a licence, for a one-off payment, to use it on the User's devices, to the extent permitted by Google Play. The source code of the App is distributed separately under the MIT licence; these terms apply only to the version distributed through Google Play.
 

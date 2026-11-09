@@ -6,7 +6,7 @@
 
 ## 1. Data controller
 
-The PaperCript application (the "App") is published on Google Play by [REDACTED], with address at [REDACTED] (the "Provider"), under the developer name javimentallab. The Provider is the controller of the personal data referred to in this policy, and the User may contact the Provider at [REDACTED].
+The PaperCript application (the "App") is published on Google Play by Javier Comyn Pérez, with address at calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (the "Provider"), under the developer name javimentallab. The Provider is the controller of the personal data referred to in this policy, and the User may contact the Provider at jotacomyn@gmail.com.
 
 ## 2. No processing of personal data in the App
 
@@ -41,8 +41,8 @@ As required by Article 13 of Regulation (EU) 2016/679 of the European Parliament
 
 ## 8. User's rights
 
-The User may exercise the rights of access, rectification, erasure, restriction of processing, objection and portability, under Articles 15 to 22 of the General Data Protection Regulation, by contacting the Provider at [REDACTED]. The User may also lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).
+The User may exercise the rights of access, rectification, erasure, restriction of processing, objection and portability, under Articles 15 to 22 of the General Data Protection Regulation, by contacting the Provider at jotacomyn@gmail.com. The User may also lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).
 
 ## 9. Contact
 
-Enquiries about this policy may be addressed to the Provider at [REDACTED] or by opening an issue at https://github.com/javimentallab/PaperCript/issues.
+Enquiries about this policy may be addressed to the Provider at jotacomyn@gmail.com or by opening an issue at https://github.com/javimentallab/PaperCript/issues.

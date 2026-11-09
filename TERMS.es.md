@@ -4,7 +4,7 @@
 
 *English version: [TERMS.md](TERMS.md)*
 
-**1. Identificación del Titular.** La aplicación PaperCript (en adelante, «la Aplicación») se ofrece en Google Play por [REDACTED], con domicilio en [REDACTED] (en adelante, «el Titular»). Cualquier comunicación relativa a estas condiciones podrá dirigirse al Titular en [REDACTED] o a través de https://github.com/javimentallab/PaperCript/issues.
+**1. Identificación del Titular.** La aplicación PaperCript (en adelante, «la Aplicación») se ofrece en Google Play por Javier Comyn Pérez, con domicilio en calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (en adelante, «el Titular»). Cualquier comunicación relativa a estas condiciones podrá dirigirse al Titular en jotacomyn@gmail.com o a través de https://github.com/javimentallab/PaperCript/issues.
 
 **2. Objeto y licencia.** Las presentes condiciones regulan el uso de la Aplicación distribuida a través de Google Play. Su adquisición otorga al Usuario una licencia de uso, mediante pago único, en sus dispositivos y en los términos que permita Google Play. El código fuente de la Aplicación se distribuye por separado bajo licencia MIT; estas condiciones se aplican únicamente a la versión distribuida en Google Play.
 

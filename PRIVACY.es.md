@@ -6,7 +6,7 @@
 
 ## 1. Responsable del tratamiento
 
-La aplicación PaperCript (en adelante, «la Aplicación») se publica en Google Play por [REDACTED], con domicilio en [REDACTED] (en adelante, «el Titular»), con el nombre de desarrollador javimentallab. El Titular es el responsable del tratamiento de los datos personales a que se refiere esta política, y el Usuario puede dirigirse a él en [REDACTED].
+La aplicación PaperCript (en adelante, «la Aplicación») se publica en Google Play por Javier Comyn Pérez, con domicilio en calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (en adelante, «el Titular»), con el nombre de desarrollador javimentallab. El Titular es el responsable del tratamiento de los datos personales a que se refiere esta política, y el Usuario puede dirigirse a él en jotacomyn@gmail.com.
 
 ## 2. Ausencia de tratamiento de datos personales en la Aplicación
 
@@ -41,8 +41,8 @@ Por exigencia del artículo 13 del Reglamento (UE) 2016/679 del Parlamento Europ
 
 ## 8. Derechos del Usuario
 
-El Usuario puede ejercer los derechos de acceso, rectificación, supresión, limitación del tratamiento, oposición y portabilidad, en los términos de los artículos 15 a 22 del Reglamento General de Protección de Datos, dirigiéndose al Titular en [REDACTED]. Asimismo, puede presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).
+El Usuario puede ejercer los derechos de acceso, rectificación, supresión, limitación del tratamiento, oposición y portabilidad, en los términos de los artículos 15 a 22 del Reglamento General de Protección de Datos, dirigiéndose al Titular en jotacomyn@gmail.com. Asimismo, puede presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).
 
 ## 9. Contacto
 
-Las consultas relativas a esta política podrán dirigirse al Titular en [REDACTED] o mediante una incidencia en https://github.com/javimentallab/PaperCript/issues.
+Las consultas relativas a esta política podrán dirigirse al Titular en jotacomyn@gmail.com o mediante una incidencia en https://github.com/javimentallab/PaperCript/issues.

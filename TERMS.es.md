@@ -2,7 +2,7 @@
 
 *Última actualización: 8 de noviembre de 2026*
 
-*English version: [TERMS.md](TERMS.md)*
+*[English](TERMS.md) · [Español](TERMS.es.md) · [Deutsch](TERMS.de.md) · [Français](TERMS.fr.md) · [Italiano](TERMS.it.md) · [Nederlands](TERMS.nl.md) · [Polski](TERMS.pl.md) · [Português](TERMS.pt.md) · [Русский](TERMS.ru.md) · [Українська](TERMS.uk.md) · [简体中文](TERMS.zh-CN.md) · [日本語](TERMS.ja.md) · [한국어](TERMS.ko.md) · [ไทย](TERMS.th.md) · [हिन्दी](TERMS.hi.md) · [Català](TERMS.ca.md) · [Galego](TERMS.gl.md) · [Euskara](TERMS.eu.md)*
 
 **1. Identificación del Titular.** La aplicación PaperCript (en adelante, «la Aplicación») se ofrece en Google Play por Javier Comyn Pérez, con domicilio en calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (en adelante, «el Titular»). Cualquier comunicación relativa a estas condiciones podrá dirigirse al Titular en jotacomyn@gmail.com o a través de https://github.com/javimentallab/PaperCript/issues.
 

@@ -25,11 +25,9 @@ almacenamiento.
 
 ## Instalar
 
-- **[F-Droid](https://f-droid.org/packages/com.javimetallab.papercript/)**: busca *PaperCript* en
-  la app de F-Droid (o en Droid-ify, Neo Store…); ella la mantiene al día.
 - **APK** de la [última versión](https://github.com/javimentallab/PaperCript/releases/latest).
-  F-Droid la compila de forma reproducible y distribuye este mismo APK firmado, así que puedes
-  cambiar de una fuente a otra y seguir actualizando.
+- **[F-Droid](https://f-droid.org/packages/com.javimetallab.papercript/)** tiene las versiones publicadas con licencia MIT. F-Droid solo admite
+  software libre, así que no recibirá las siguientes.
 
 ---
 
@@ -104,7 +102,7 @@ cambia las cosas.
 - **Sin permiso de red.** El APK solo declara `CAMERA`, e `INTERNET` se elimina expresamente con
   `tools:node="remove"`. Sin él, el kernel no deja a la app abrir un socket: no es una promesa, es una
   incapacidad.
-- **Código abierto entero.** Los QR se leen con [ZXing](https://github.com/zxing/zxing); no hay Google
+- **Solo bibliotecas de código abierto.** Los QR se leen con [ZXing](https://github.com/zxing/zxing); no hay Google
   Play Services ni otras bibliotecas propietarias.
 - `FLAG_SECURE`: sin capturas de pantalla, sin miniatura en recientes y sin grabación de pantalla.
 - El portapapeles se marca como sensible y se borra a los 45 s de copiar **o al volver a la app**, lo
@@ -175,5 +173,5 @@ Consulta [CONTRIBUTING](CONTRIBUTING.md), en inglés. Para avisar en privado de 
 
 ## Licencia
 
-[MIT](LICENSE) © [javimentallab](https://github.com/javimentallab). Las licencias de terceros están en
+[PolyForm Noncommercial 1.0.0](LICENSE): se permite cualquier uso no comercial; el uso comercial necesita permiso del autor. Las versiones hasta la 1.3.5 se publicaron con licencia MIT. Las licencias de terceros están en
 [NOTICE](NOTICE).

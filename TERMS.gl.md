@@ -6,7 +6,7 @@
 
 **1. Identificación do Prestador.** A aplicación PaperCript (a «Aplicación») é ofrecida en Google Play por Javier Comyn Pérez, con domicilio en calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (o «Prestador»). Calquera comunicación relativa a estas condicións poderá dirixirse ao Prestador en jotacomyn@gmail.com ou a través de https://github.com/javimentallab/PaperCript/issues.
 
-**2. Obxecto e licenza.** As presentes condicións regulan o uso da Aplicación distribuída a través de Google Play. A súa adquisición outorga ao Usuario unha licenza de uso, mediante pagamento único, nos seus dispositivos e nos termos que permita Google Play. O código fonte da Aplicación distribúese por separado baixo licenza MIT; estas condicións aplícanse unicamente á versión distribuída en Google Play.
+**2. Obxecto e licenza.** As presentes condicións regulan o uso da Aplicación distribuída a través de Google Play. A súa adquisición outorga ao Usuario unha licenza de uso, mediante pagamento único, nos seus dispositivos e nos termos que permita Google Play. O código fonte da Aplicación distribúese por separado baixo licenza PolyForm Noncommercial 1.0.0; estas condicións aplícanse unicamente á versión distribuída en Google Play.
 
 **3. Responsabilidade do Usuario sobre os seus contrasinais.** O acceso aos contrasinais do Usuario depende da súa chave mestra e das tarxetas que imprima. A chave mestra non pode recuperarse: en caso de esquecemento, ou de perda dunha tarxeta que conteña a única copia dun contrasinal, ese contrasinal non poderá recuperarse por ningún medio. Antes de desbotar un contrasinal orixinal, o Usuario deberá comprobar que a tarxeta correspondente se descifra correctamente.
 

@@ -25,11 +25,9 @@ only storage.
 
 ## Install
 
-- **[F-Droid](https://f-droid.org/packages/com.javimetallab.papercript/)** — search for *PaperCript* in
-  the F-Droid app (or Droid-ify, Neo Store…); it keeps the app updated.
 - **APK** from the [latest release](https://github.com/javimentallab/PaperCript/releases/latest).
-  F-Droid builds it reproducibly and ships this same signed APK, so you can switch
-  between both sources and keep updating.
+- **[F-Droid](https://f-droid.org/packages/com.javimetallab.papercript/)** has the versions released under the MIT licence. F-Droid only accepts
+  free software, so it will not get the later ones.
 
 ---
 
@@ -103,7 +101,7 @@ passphrase (77–90 bits) is what actually moves the needle.
 - **No network permission.** The APK declares only `CAMERA`, and `INTERNET` is explicitly
   stripped with `tools:node="remove"`. Without it the kernel will not let the app open a
   socket — that is not a promise, it is an inability.
-- **Fully open source.** QR codes are read with [ZXing](https://github.com/zxing/zxing);
+- **Only open-source libraries.** QR codes are read with [ZXing](https://github.com/zxing/zxing);
   there are no Google Play Services or other proprietary libraries.
 - `FLAG_SECURE`: no screenshots, no recents thumbnail, no screen recording.
 - The clipboard is flagged as sensitive and cleared 45 s after copying **or when you return
@@ -177,5 +175,5 @@ See [CONTRIBUTING](CONTRIBUTING.md). To report a security problem privately, see
 
 ## License
 
-[MIT](LICENSE) © [javimentallab](https://github.com/javimentallab). Third-party licences are
+[PolyForm Noncommercial 1.0.0](LICENSE): any noncommercial use is allowed; commercial use needs the author's permission. Versions up to 1.3.5 were released under the MIT licence. Third-party licences are
 in [NOTICE](NOTICE).

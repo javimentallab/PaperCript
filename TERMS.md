@@ -6,7 +6,7 @@
 
 **1. Identification of the Provider.** The PaperCript application (the "App") is offered on Google Play by Javier Comyn Pérez, with address at calle Olivos, número 36, 28670 Villaviciosa de Odón, Madrid, España (the "Provider"). Any communication regarding these terms may be addressed to the Provider at jotacomyn@gmail.com or at https://github.com/javimentallab/PaperCript/issues.
 
-**2. Purpose and licence.** These terms govern the use of the App distributed through Google Play. Purchasing the App grants the User a licence, for a one-off payment, to use it on the User's devices, to the extent permitted by Google Play. The source code of the App is distributed separately under the MIT licence; these terms apply only to the version distributed through Google Play.
+**2. Purpose and licence.** These terms govern the use of the App distributed through Google Play. Purchasing the App grants the User a licence, for a one-off payment, to use it on the User's devices, to the extent permitted by Google Play. The source code of the App is distributed separately under the PolyForm Noncommercial 1.0.0 licence; these terms apply only to the version distributed through Google Play.
 
 **3. User's responsibility for passwords.** Access to the User's passwords depends on the User's master password and on the cards the User prints. The master password cannot be recovered: if it is forgotten, or if a card holding the only copy of a password is lost, that password cannot be recovered by any means. Before discarding an original password, the User shall check that the corresponding card decrypts correctly.
 

@@ -43,16 +43,23 @@ object SecureClipboard {
     private var trackedText: String? = null
     private var deadlineElapsed: Long = 0
 
-    fun copy(context: Context, text: String) {
+    /**
+     * [sensitive] false is the user's explicit choice to share it: without the
+     * flag, clipboard sync to a computer and keyboards that honour it let it
+     * through. The timed clear applies either way.
+     */
+    fun copy(context: Context, text: String, sensitive: Boolean = true) {
         val clipboard = clipboardOf(context)
 
         val clip = ClipData.newPlainText("", text).apply {
             // Literal strings instead of ClipDescription.EXTRA_IS_SENSITIVE
             // (API 33), to avoid a version check: older ROMs just ignore them.
             // They keep the content out of the system's clipboard preview.
-            description.extras = PersistableBundle().apply {
-                putBoolean("android.content.extra.IS_SENSITIVE", true)
-                putBoolean("androidx.content.extra.IS_SENSITIVE", true)
+            if (sensitive) {
+                description.extras = PersistableBundle().apply {
+                    putBoolean("android.content.extra.IS_SENSITIVE", true)
+                    putBoolean("androidx.content.extra.IS_SENSITIVE", true)
+                }
             }
         }
         clipboard.setPrimaryClip(clip)

@@ -27,6 +27,7 @@ import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.javimetallab.papercript.R
+import com.javimetallab.papercript.autofill.DecryptedForFill
 import com.javimetallab.papercript.crypto.SecretCodec
 import com.javimetallab.papercript.security.SecureClipboard
 import kotlinx.coroutines.Dispatchers
@@ -44,7 +45,9 @@ import kotlinx.coroutines.withContext
 fun DecryptScreen(
     hasCameraPermission: Boolean,
     onRequestCamera: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    // Set when opened from autofill: the password goes there instead of on screen.
+    onFill: ((String) -> Unit)? = null
 ) {
     var scanningQr by remember { mutableStateOf(false) }
     var code by remember { mutableStateOf("") }
@@ -92,6 +95,7 @@ fun DecryptScreen(
     }
 
     fun invalidate() {
+        if (password != null) DecryptedForFill.clear()
         password = null
         failure = null
     }
@@ -164,7 +168,13 @@ fun DecryptScreen(
                         SecretCodec.decrypt(code, master)
                     }
                     if (result is SecretCodec.DecryptResult.Success) {
-                        password = result.password
+                        if (onFill != null) {
+                            onFill(result.password)
+                        } else {
+                            password = result.password
+                            // For a password field in another app, for a short while.
+                            DecryptedForFill.set(result.password, scannedLabel)
+                        }
                     } else {
                         failure = result
                     }
@@ -181,7 +191,12 @@ fun DecryptScreen(
                 )
                 Text(stringResource(R.string.deriving_key))
             } else {
-                Text(stringResource(R.string.decrypt_button))
+                Text(
+                    stringResource(
+                        if (onFill != null) R.string.autofill_decrypt_and_fill
+                        else R.string.decrypt_button
+                    )
+                )
             }
         }
 
@@ -216,11 +231,13 @@ fun DecryptScreen(
                 value = it,
                 monospace = false,
                 hidden = true,
+                plainCopy = true,
                 footer = stringResource(
                     R.string.clipboard_cleared,
                     SecureClipboard.CLEAR_AFTER_SECONDS
                 )
             )
+            AutofillHint()
         }
     }
 }

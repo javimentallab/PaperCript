@@ -2,7 +2,8 @@ package com.javimetallab.papercript.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -82,6 +83,7 @@ fun SecretField(
  * Shows a highlighted result (the code to copy, or the recovered password)
  * with a copy button.
  */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun ResultCard(
     title: String,
@@ -89,7 +91,9 @@ fun ResultCard(
     monospace: Boolean = true,
     hidden: Boolean = false,
     footer: String? = null,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    // A second copy button without the "sensitive" flag, to share the value.
+    plainCopy: Boolean = false
 ) {
     val context = androidx.compose.ui.platform.LocalContext.current
     var revealed by remember(value) { mutableStateOf(!hidden) }
@@ -113,10 +117,11 @@ fun ResultCard(
                 Text(it, style = MaterialTheme.typography.bodySmall)
             }
 
-            Row(
+            // Wraps: with the plain-copy button, four buttons do not fit on one
+            // line in several languages.
+            FlowRow(
                 Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-                verticalAlignment = Alignment.CenterVertically
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 if (hidden) {
                     TextButton(onClick = { revealed = !revealed }) {
@@ -129,6 +134,14 @@ fun ResultCard(
                 }) {
                     Icon(Icons.Filled.ContentCopy, contentDescription = null)
                     Text("  " + stringResource(R.string.copy), Modifier.padding(start = 4.dp))
+                }
+                if (plainCopy) {
+                    TextButton(onClick = {
+                        SecureClipboard.copy(context, value, sensitive = false)
+                        copied = true
+                    }) {
+                        Text(stringResource(R.string.copy_plain))
+                    }
                 }
 
                 // Manual clear: the only immediate and always-reliable path,

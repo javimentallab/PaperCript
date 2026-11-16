@@ -43,6 +43,16 @@ The Android print dialog handles both a real printer and a PDF. Then cut them ou
 **Decrypt** → *Scan the card QR* → master password. The label travels inside the QR, so the
 master password is all you type.
 
+**Fill without copying** → set PaperCript as the autofill service (the button under a
+decrypted password opens the setting). For two minutes after decrypting a card, any password
+field offers it: tap the suggestion with the card's name and it is filled, once, without going
+through the clipboard. With nothing decrypted, the suggestion opens the decrypt screen and fills
+the field when you are done. Android allows only one autofill service, so it replaces the one
+you use now.
+
+**Copy in plain text** → next to *Copy*, for when you want the password elsewhere: clipboard
+sync with a computer, a messaging app. *Copy* marks it as sensitive, which some of those skip.
+
 > ⚠️ The pending card list only lives in memory while the app is open. Print before closing.
 
 > ⚠️ The master password has no recovery. Forget it and every printed card turns into
@@ -106,7 +116,12 @@ passphrase (77–90 bits) is what actually moves the needle.
 - `FLAG_SECURE`: no screenshots, no recents thumbnail, no screen recording.
 - The clipboard is flagged as sensitive and cleared 45 s after copying **or when you return
   to the app**, whichever happens while it is in the foreground. There is also a button to
-  clear it immediately.
+  clear it immediately. *Copy in plain text* leaves out the sensitive flag; it is cleared all
+  the same.
+- **Autofill skips the clipboard**, where keyboards and clipboard managers may keep a readable
+  copy whatever the flag says. The decrypted password waits in memory for two minutes and only
+  leaves the app when you tap its suggestion. Android shows the service the layout of the screen
+  being filled; PaperCript only looks for password fields in it and keeps nothing.
 - No backups (`allowBackup=false`) and nothing written to disk.
 - Derived keys are zeroed in memory as soon as they are used.
 - **Privacy policy inside the app**: a button at the bottom of the Encrypt tab shows it as text,

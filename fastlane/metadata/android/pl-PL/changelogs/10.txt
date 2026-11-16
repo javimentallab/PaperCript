@@ -1,0 +1,1 @@
+Autouzupełnianie: PaperCript może wypełnić pole hasła w dowolnej aplikacji bez użycia schowka. Po odszyfrowaniu karty pole proponuje hasło jeden raz przez dwie minuty; w przeciwnym razie podpowiedź otwiera ekran odszyfrowywania. Nowy przycisk „Kopiuj jawnym tekstem”, do synchronizacji schowka z komputerem lub komunikatorów.

@@ -1,0 +1,1 @@
+Autofill: PaperCript can fill a password field in any app without using the clipboard. After decrypting a card, the field offers it once for two minutes; otherwise the suggestion opens the decrypt screen. New “Copy in plain text” button, for clipboard sync with a computer or messaging apps.

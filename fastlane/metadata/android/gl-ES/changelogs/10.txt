@@ -1,0 +1,1 @@
+Autoenchido: PaperCript pode encher un campo de contrasinal en calquera aplicación sen pasar polo portapapeis. Tras descifrar unha tarxeta, o campo ofréceo unha vez durante dous minutos; se non, a suxestión abre a pantalla de descifrar. Novo botón «Copiar en claro», para sincronizar o portapapeis co ordenador ou usalo en aplicacións de mensaxería.

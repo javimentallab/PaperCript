@@ -1,0 +1,1 @@
+Betetze automatikoa: PaperCript-ek edozein aplikaziotako pasahitz-eremua bete dezake arbeletik pasatu gabe. Txartel bat deszifratu ondoren, eremuak behin eskaintzen du bi minutuz; bestela, iradokizunak deszifratzeko pantaila irekitzen du. «Kopiatu testu argian» botoi berria, arbela ordenagailuarekin sinkronizatzeko edo mezularitza-aplikazioetan erabiltzeko.

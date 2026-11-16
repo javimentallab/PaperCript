@@ -1,0 +1,1 @@
+Compilazione automatica: PaperCript può compilare un campo password in qualsiasi app senza passare dagli appunti. Dopo aver decifrato una scheda, il campo la propone una volta per due minuti; altrimenti il suggerimento apre la schermata per decifrare. Nuovo pulsante «Copia in chiaro», per sincronizzare gli appunti con un computer o usarla nelle app di messaggistica.

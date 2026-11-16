@@ -1,0 +1,1 @@
+Autofill: PaperCript kann ein Passwortfeld in jeder App ausfüllen, ohne die Zwischenablage zu nutzen. Nach dem Entschlüsseln einer Karte bietet das Feld es zwei Minuten lang einmal an; sonst öffnet der Vorschlag den Entschlüsselungsbildschirm. Neue Schaltfläche „Im Klartext kopieren“, für die Synchronisierung der Zwischenablage mit einem Computer oder für Messenger.

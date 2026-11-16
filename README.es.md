@@ -43,6 +43,17 @@ recórtalas.
 **Descifrar** → *Escanear el QR de la tarjeta* → clave maestra. La etiqueta viaja dentro del QR, así
 que solo tienes que escribir la clave maestra.
 
+**Rellenar sin copiar** → pon PaperCript como servicio de autorrellenado (el botón que sale bajo una
+contraseña descifrada abre el ajuste). Durante dos minutos tras descifrar una tarjeta, cualquier
+campo de contraseña la ofrece: tocas la sugerencia con el nombre de la tarjeta y se rellena, una sola
+vez, sin pasar por el portapapeles. Si no hay nada descifrado, la sugerencia abre la pantalla de
+descifrar y rellena el campo al terminar. Android solo admite un servicio de autorrellenado, así que
+sustituye al que uses ahora.
+
+**Copiar en claro** → junto a *Copiar*, para cuando quieres la contraseña en otro sitio: la
+sincronización del portapapeles con el ordenador o una app de mensajería. *Copiar* la marca como
+sensible, y algunas de esas la ignoran por eso.
+
 > ⚠️ La lista de tarjetas pendientes solo existe en memoria mientras la app está abierta. Imprime
 > antes de cerrarla.
 
@@ -106,7 +117,13 @@ cambia las cosas.
   Play Services ni otras bibliotecas propietarias.
 - `FLAG_SECURE`: sin capturas de pantalla, sin miniatura en recientes y sin grabación de pantalla.
 - El portapapeles se marca como sensible y se borra a los 45 s de copiar **o al volver a la app**, lo
-  que ocurra con ella en primer plano. También hay un botón para borrarlo en el acto.
+  que ocurra con ella en primer plano. También hay un botón para borrarlo en el acto. *Copiar en
+  claro* no pone la marca de sensible; se borra igual.
+- **El autorrellenado no pasa por el portapapeles**, donde los teclados y los gestores de
+  portapapeles pueden guardar una copia legible digan lo que digan las marcas. La contraseña
+  descifrada espera en memoria dos minutos y solo sale de la app cuando tocas su sugerencia.
+  Android le enseña al servicio la estructura de la pantalla que se rellena; PaperCript solo busca
+  en ella los campos de contraseña y no guarda nada.
 - Sin copias de seguridad (`allowBackup=false`) y sin escribir nada en disco.
 - Las claves derivadas se ponen a cero en memoria en cuanto se usan.
 - **Política de privacidad dentro de la app**: un botón al final de la pestaña Cifrar la muestra como

@@ -1,0 +1,1 @@
+Autorrellenado: PaperCript puede rellenar un campo de contraseña en cualquier app sin pasar por el portapapeles. Tras descifrar una tarjeta, el campo la ofrece una vez durante dos minutos; si no, la sugerencia abre la pantalla de descifrar. Nuevo botón «Copiar en claro», para sincronizar el portapapeles con el ordenador o usarla en apps de mensajería.

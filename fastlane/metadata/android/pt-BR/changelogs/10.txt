@@ -1,0 +1,1 @@
+Preenchimento automático: o PaperCript pode preencher um campo de senha em qualquer app sem passar pela área de transferência. Depois de decifrar um cartão, o campo oferece a senha uma vez durante dois minutos; caso contrário, a sugestão abre a tela de decifrar. Novo botão «Copiar em claro», para sincronizar a área de transferência com um computador ou usar em apps de mensagens.

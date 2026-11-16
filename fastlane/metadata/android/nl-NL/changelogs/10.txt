@@ -1,0 +1,1 @@
+Automatisch invullen: PaperCript kan een wachtwoordveld in elke app invullen zonder het klembord te gebruiken. Na het ontsleutelen van een kaart biedt het veld het twee minuten lang één keer aan; anders opent de suggestie het ontsleutelscherm. Nieuwe knop ‘Leesbaar kopiëren’, voor klembordsynchronisatie met een computer of berichtenapps.

@@ -14,8 +14,8 @@ android {
         applicationId = "com.javimetallab.papercript"
         minSdk = 26
         targetSdk = 36
-        versionCode = 9
-        versionName = "1.3.5"
+        versionCode = 10
+        versionName = "1.4"
     }
 
     // The release key lives outside the repo; keystore.properties (gitignored)

@@ -1,0 +1,1 @@
+Emplenament automàtic: PaperCript pot emplenar un camp de contrasenya en qualsevol aplicació sense passar pel porta-retalls. Després de desxifrar una targeta, el camp l'ofereix una vegada durant dos minuts; si no, el suggeriment obre la pantalla de desxifrar. Botó nou «Copia en clar», per sincronitzar el porta-retalls amb l'ordinador o fer-la servir en aplicacions de missatgeria.
